@@ -2,11 +2,11 @@
 <table>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
-    <td><a href="#configuration-part-1-config-values"><b>Section 1 - Loading Screens &lt;3 </b></a></td>
+    <td><a href="#section-1---loading-screens-3"><b>Section 1 - Loading Screens &lt;3 </b></a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
-    <td><a href="#section-2a---wip-game-3"><b>Section 2a: WIP &lt;3</b></a></td>
+    <td><a href="#section-2a---wip-game-3"><b>Section 2a - WIP &lt;3</b></a></td>
   </tr>
 </table>
 
