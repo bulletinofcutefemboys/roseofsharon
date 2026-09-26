@@ -64,6 +64,9 @@ And also if your configurations dont match this AND especially the **module scri
 <img width="518" height="376" alt="image" src="https://github.com/user-attachments/assets/6ac1d42c-af09-4b31-8964-a7d5ad333ac1" /><br>
 Then you may want to add the proper values back or redo instructions on [The Installation Guide](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/Installation.md)
 
+
+ONE Thing about Color3, A new Color3 Value created from Color3.new must have rgb values from [0,1]. While Color3.fromRGB must be from [0,255]!
+
 # Section 2a - Wip Game <3
 
 > Before we begin, your ReplicatedFirst folder should look like this.  
