@@ -41,7 +41,7 @@ Here is a breakdown of all properties in a sorted table.
 | InitialIconSize | UDim2 | Sets the **Size of the icon initially** right as the loading animation plays.<br><img width="737" height="678" alt="image" src="https://github.com/user-attachments/assets/89d559bb-8f18-49de-be2b-6825ee16e6e6" /><br>e.g. this has ```InitialIconSize = UDim2.new(0.15,0,0.15,0)``` |
 | VertexIconSize | UDim2 | Sets the **Size of the icon** right at its largest point when the loading animation is in the middle of completion.<br><img width="790" height="785" alt="image" src="https://github.com/user-attachments/assets/a3ea1e49-7184-4a06-91d7-1dc9bdcbdf8e" /><br>e.g. this has ```InitialIconSize = UDim2.new(14/15,0,14/15,0)``` |
 | SetInIconSize | UDim2 | Sets the **Size of the icon** after the boot up animation has been completed.<br><img width="783" height="747" alt="image" src="https://github.com/user-attachments/assets/56ef3462-c41d-4565-b154-b4167caa9662" /><br>e.g. this has ```InitialIconSize = UDim2.new(7/9,0,7/9,0)``` |
-| IconUICornerRadii | List of **UDim** | mrowwwwwwwwwwww |
+| IconUICornerRadii | List of **UDim** | So<br><img width="379" height="369" alt="image" src="https://github.com/user-attachments/assets/3a7a9ebc-0145-4673-b11d-35ae48ea4be4" /><br>e.g. this Icon uses these **UDim** parameters below:<br><img width="311" height="85" alt="image" src="https://github.com/user-attachments/assets/ee4e8def-34df-406b-8030-3607489b4678" /> |
 | UITextFontFace | Enum.Font | mrowwwwwwwwwwww |
 | UITextFontStyle | Enum.FontStyle | mrowwwwwwwwwwww |
 | UITextFontWeight | Enum.FontWeight | mrowwwwwwwwwwww |
