@@ -22,7 +22,7 @@ local offset = x.Offset
 A UDim2 is simply **2 UDim objects combined** to define all sizes and positions of all UI Objects.<br>
 It contains a ```x``` and ```y``` value.
 
-> Suppose I have a UI Object with a 100px width and 50px width
+> Suppose I have a UI Object with a 100px width and 50px height
 
 > Heres how I would build the constructor
 
