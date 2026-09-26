@@ -1,10 +1,22 @@
-- [Section I - Loading Screens <3](#section-i---loading-screens-3)
+# Table of Contents
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
+    <td><a href="#configuration-part-1-config-values"><b>Section 1 - Loading Screens &lt;3 </b></a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
+    <td><a href="#section-2a---wip-game-3"><b>Section 2a: WIP &lt;3</b></a></td>
+  </tr>
+</table>
 
-# Section I - Loading Screens <3
+<br>
 
-Before we begin, your ReplicatedFirst folder should look like this.  
-<img width="411" height="58" alt="image" src="https://github.com/user-attachments/assets/9a24df2b-4238-41fe-b89d-c89b5638bbc2" />  
-If not, please review [The Installation Guide](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/Installation.md) and follow instruction so things dont break.
+# Section 1 - Loading Screens <3
+
+> Before we begin, your ReplicatedFirst folder should look like this.  
+> <img width="411" height="58" alt="image" src="https://github.com/user-attachments/assets/9a24df2b-4238-41fe-b89d-c89b5638bbc2" />  
+> If not, please review [The Installation Guide](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/Installation.md) and follow instruction so things dont break.
 
 ### Configuration Part 1 (Config Values)  
 <img width="229" height="180" alt="image" src="https://github.com/user-attachments/assets/e249b792-cfc6-4ad7-bfb7-36b8fd2a0aee" /><br>
@@ -21,30 +33,4 @@ Here is a breakdown of all properties in a sorted table.
 | NumberOfParticles | integer | Determines **how much particles** should be rendered in the **Expanding Particle VFX.**<br><img width="1440" height="788" alt="image" src="https://github.com/user-attachments/assets/2cc50c12-b838-4433-9136-02821b6e90cc" /><br>e.g this has ```NumberOfParticles = 1``` |
 
 
-<!-- Unordered List -->
-- Item 1
-- Item 2
-  - Sub-item 2a (Indent 2 spaces)
-
-<!-- Ordered List -->
-1. First item
-2. Second item
-
-<!-- Task List -->
-- [x] Completed task
-- [ ] Incomplete task
-
-**Bold Text** or __Bold Text__
-*Italic Text* or _Italic Text_
-***Bold and Italic***
-~~Strikethrough~~
-This is <sub>subscript</sub>
-This is <sup>superscript</sup>
-
-
-
----
-
-| Left Aligned | Center Aligned | Right Aligned |
-| :---         |     :---:      |          ---: |
-| Text         | More Text      | $100.00       |
+# Section 2a - Wip Game <3
