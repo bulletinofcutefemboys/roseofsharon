@@ -33,18 +33,21 @@ Here is a breakdown of all properties in a sorted table.
 | NumberOfParticles | integer | Determines **how much particles** should be rendered in the **Expanding Particle VFX.**<br><img width="1440" height="788" alt="image" src="https://github.com/user-attachments/assets/2cc50c12-b838-4433-9136-02821b6e90cc" /><br>e.g this has ```NumberOfParticles = 1``` |
 
 ### Configuration Part 2 (ExtraConfigs)
-<img width="513" height="339" alt="image" src="https://github.com/user-attachments/assets/953b2801-527e-454a-860d-728d74235456" /><br>
+<img width="435" height="399" alt="image" src="https://github.com/user-attachments/assets/3a3d345e-f4f2-4c7b-a3e7-32c9260d4adc" /><br>
 The image above represents all possible Loading Screen **ExtraConfigs** for Rose of Sharon Extras (RSE)  
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-| InitialIconSize | UDim2 | mrowwwwwwwwwwww |
-| VertexIconSize | UDim2 | mrowwwwwwwwwwww |
-| SetInIconSize | UDim2 | mrowwwwwwwwwwww |
+| InitialIconSize | UDim2 | Sets the **Size of the icon initially** right as the loading animation plays.<br><img width="737" height="678" alt="image" src="https://github.com/user-attachments/assets/89d559bb-8f18-49de-be2b-6825ee16e6e6" /><br>e.g. this has ```InitialIconSize = UDim2.new(0.15,0,0.15,0)``` |
+| VertexIconSize | UDim2 | Sets the **Size of the icon** right at its largest point when the loading animation is in the middle of completion.<br><img width="790" height="785" alt="image" src="https://github.com/user-attachments/assets/a3ea1e49-7184-4a06-91d7-1dc9bdcbdf8e" /><br>e.g. this has ```InitialIconSize = UDim2.new(14/15,0,14/15,0)``` |
+| SetInIconSize | UDim2 | Sets the **Size of the icon** after the boot up animation has been completed.<br><img width="783" height="747" alt="image" src="https://github.com/user-attachments/assets/56ef3462-c41d-4565-b154-b4167caa9662" /><br>e.g. this has ```InitialIconSize = UDim2.new(7/9,0,7/9,0)``` |
 | IconUICornerRadii | List of **UDim** | mrowwwwwwwwwwww |
 | UITextFontFace | Enum.Font | mrowwwwwwwwwwww |
 | UITextFontStyle | Enum.FontStyle | mrowwwwwwwwwwww |
 | UITextFontWeight | Enum.FontWeight | mrowwwwwwwwwwww |
+| UITextColor | Color3 | mrowwwwwwwwwwww |
+| BackgroundBlack | Color3 | mrowwwwwwwwwwww |
+| BackgroundWhite | Color3 | mrowwwwwwwwwwww |
 
 
 ### Configuration Part 3 (Misconceptions & Traps)
@@ -59,7 +62,7 @@ Once you have the ```rbxassetid://1234567890``` you can paste it into the **Icon
 Another misconception is ___please dont set NumberOfParticles to 0 or any negative integer___. This will obviously break the loading screen TwT. ___and definitely dont set NumberOfParticles to a giant number like 1,346,549,200___ your pc fans will hate u<br>
 And also if your configurations dont match this AND especially the **module script**<br>
 <img width="229" height="180" alt="image" src="https://github.com/user-attachments/assets/e249b792-cfc6-4ad7-bfb7-36b8fd2a0aee" /><br>
-<img width="513" height="339" alt="image" src="https://github.com/user-attachments/assets/953b2801-527e-454a-860d-728d74235456" /><br>
+<img width="435" height="399" alt="image" src="https://github.com/user-attachments/assets/3a3d345e-f4f2-4c7b-a3e7-32c9260d4adc" /><br>
 Then you may want to add the proper values back or redo instructions on [The Installation Guide](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/Installation.md)
 
 # Section 2a - Wip Game <3
