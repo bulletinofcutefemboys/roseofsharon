@@ -33,7 +33,7 @@ Here is a breakdown of all properties in a sorted table.
 | NumberOfParticles | integer | Determines **how much particles** should be rendered in the **Expanding Particle VFX.**<br><img width="1440" height="788" alt="image" src="https://github.com/user-attachments/assets/2cc50c12-b838-4433-9136-02821b6e90cc" /><br>e.g this has ```NumberOfParticles = 1``` |
 
 ### Configuration Part 2 (ExtraConfigs)
-<img width="435" height="399" alt="image" src="https://github.com/user-attachments/assets/3a3d345e-f4f2-4c7b-a3e7-32c9260d4adc" /><br>
+<img width="518" height="376" alt="image" src="https://github.com/user-attachments/assets/6ac1d42c-af09-4b31-8964-a7d5ad333ac1" /><br>
 The image above represents all possible Loading Screen **ExtraConfigs** for Rose of Sharon Extras (RSE)  
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
@@ -41,13 +41,12 @@ Here is a breakdown of all properties in a sorted table.
 | InitialIconSize | [UDim2](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md) | Sets the **Size of the icon initially** right as the loading animation plays.<br><img width="737" height="678" alt="image" src="https://github.com/user-attachments/assets/89d559bb-8f18-49de-be2b-6825ee16e6e6" /><br>e.g. this has ```InitialIconSize = UDim2.new(0.15,0,0.15,0)``` |
 | VertexIconSize | [UDim2](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md) | Sets the **Size of the icon** right at its largest point when the loading animation is in the middle of completion.<br><img width="790" height="785" alt="image" src="https://github.com/user-attachments/assets/a3ea1e49-7184-4a06-91d7-1dc9bdcbdf8e" /><br>e.g. this has ```InitialIconSize = UDim2.new(14/15,0,14/15,0)``` |
 | SetInIconSize | [UDim2](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md) | Sets the **Size of the icon** after the boot up animation has been completed.<br><img width="783" height="747" alt="image" src="https://github.com/user-attachments/assets/56ef3462-c41d-4565-b154-b4167caa9662" /><br>e.g. this has ```InitialIconSize = UDim2.new(7/9,0,7/9,0)``` |
-| IconUICornerRadii | List of **[UDim](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md)** | So<br><img width="379" height="369" alt="image" src="https://github.com/user-attachments/assets/3a7a9ebc-0145-4673-b11d-35ae48ea4be4" /><br>e.g. this Icon uses these **[UDim](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md)** parameters below:<br><img width="311" height="85" alt="image" src="https://github.com/user-attachments/assets/ee4e8def-34df-406b-8030-3607489b4678" /> |
-| UITextFontFace | Enum.Font | mrowwwwwwwwwwww |
-| UITextFontStyle | Enum.FontStyle | mrowwwwwwwwwwww |
-| UITextFontWeight | Enum.FontWeight | mrowwwwwwwwwwww |
-| UITextColor | Color3 | mrowwwwwwwwwwww |
-| BackgroundBlack | Color3 | mrowwwwwwwwwwww |
-| BackgroundWhite | Color3 | mrowwwwwwwwwwww |
+| IconUICornerRadii | List of **[UDim](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md)** | **A list of 4 corners defined as ```TopLeftRadius,TopRightRadius,BottomLeftRadius,BottomRightRadius``` with [UDim](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md) values.** I suggest visiting the UDim12.md documentation for more depth about them!<br><img width="379" height="369" alt="image" src="https://github.com/user-attachments/assets/3a7a9ebc-0145-4673-b11d-35ae48ea4be4" /><br>e.g. this Icon uses these **[UDim](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/UDim12.md)** parameters below:<br><img width="311" height="85" alt="image" src="https://github.com/user-attachments/assets/ee4e8def-34df-406b-8030-3607489b4678" /> |
+| UITextFontFace | Enum.Font | Sets the rendered font of all status texts from a **predefined list of Enum.Font fonts**<br><img width="203" height="43" alt="image" src="https://github.com/user-attachments/assets/0f534430-c7b9-46b9-bf3d-46067cb34e88" /><br>e.g. this status text uses ```UITextFontFace = Enum.Font.IndieFlower``` |
+| UITextFontStyle | Enum.FontStyle | Sets the font style of all status texts, which can be either **Normal or Italicized** <br><img width="416" height="108" alt="image" src="https://github.com/user-attachments/assets/f7c365f9-f1a8-40d0-b757-22c8f5fc9e8e" /><br>e.g. this button uses ```UITextFontStyle = Enum.FontStyle.Italic``` |
+| UITextFontWeight | Enum.FontWeight | Sets the font weight of all status texts, which can range from **Super Skinny Light to Heavy Black**.<br><img width="255" height="38" alt="image" src="https://github.com/user-attachments/assets/696927b0-0e6f-411a-a3c6-39202a9c8c73" /><br>e.g. This status text uses ```UITextFontWeight = Enum.FontWeight.Bold``` |
+| BackgroundBlack | Color3 | Determines the **Color3 value** of the **black contrasted side of the loading screen.**<br>Default is```Color.fromRGB(0,0,0)``` |
+| BackgroundWhite | Color3 | Determines the **Color3 value** of the **white contrasted side of the loading screen.**<br>Default is```Color.fromRGB(255,255,255)``` |
 
 
 ### Configuration Part 3 (Misconceptions & Traps)
@@ -62,7 +61,7 @@ Once you have the ```rbxassetid://1234567890``` you can paste it into the **Icon
 Another misconception is ___please dont set NumberOfParticles to 0 or any negative integer___. This will obviously break the loading screen TwT. ___and definitely dont set NumberOfParticles to a giant number like 1,346,549,200___ your pc fans will hate u<br>
 And also if your configurations dont match this AND especially the **module script**<br>
 <img width="229" height="180" alt="image" src="https://github.com/user-attachments/assets/e249b792-cfc6-4ad7-bfb7-36b8fd2a0aee" /><br>
-<img width="435" height="399" alt="image" src="https://github.com/user-attachments/assets/3a3d345e-f4f2-4c7b-a3e7-32c9260d4adc" /><br>
+<img width="518" height="376" alt="image" src="https://github.com/user-attachments/assets/6ac1d42c-af09-4b31-8964-a7d5ad333ac1" /><br>
 Then you may want to add the proper values back or redo instructions on [The Installation Guide](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/docs/Installation.md)
 
 # Section 2a - Wip Game <3
