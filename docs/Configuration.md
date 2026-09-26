@@ -6,7 +6,7 @@
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
-    <td><a href="#section-2a---wip-game-3"><b>Section 2a - WIP &lt;3</b></a></td>
+    <td><a href="#section-2---music-system-3"><b>Section 2 - Music System &lt;3</b></a></td>
   </tr>
 </table>
 
@@ -67,7 +67,7 @@ Then you may want to add the proper values back or redo instructions on [The Ins
 
 ONE Thing about Color3, A new Color3 Value created from Color3.new must have rgb values from [0,1]. While Color3.fromRGB must be from [0,255]!
 
-# Section 2a - Wip Game <3
+# Section 2 - Music System <3
 
 > Before we begin, your ReplicatedFirst folder should look like this.  
 > <img width="411" height="58" alt="image" src="https://github.com/user-attachments/assets/9a24df2b-4238-41fe-b89d-c89b5638bbc2" />  
