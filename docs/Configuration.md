@@ -69,7 +69,9 @@ ONE Thing about Color3, A new Color3 Value created from Color3.new must have rgb
 
 # Section 2 - Music System <3
 
-> Before we begin, your ReplicatedFirst folder should look like this.  
-> <img width="411" height="58" alt="image" src="https://github.com/user-attachments/assets/9a24df2b-4238-41fe-b89d-c89b5638bbc2" />  
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="608" height="316" alt="image" src="https://github.com/user-attachments/assets/bf6b32be-e436-4cd3-b4e9-e077d9f582bd" /><br>
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
 
