@@ -80,6 +80,7 @@ Then you may want to add the proper values back or redo instructions on [The Ins
 
 ONE Thing about Color3, A new Color3 Value created from Color3.new must have rgb values from [0,1]. While Color3.fromRGB must be from [0,255]!
 
+Also Also, some IconAssetID/SoundStartID may not work because **the asset is entirely private/got taken down or DMCAed**
 
 # Section 2 - Music System <3
 
@@ -110,11 +111,110 @@ Here is a breakdown of all properties in a sorted table.
 This image represents the Soundtrack nested table structure for Rose of Sharon (RS).<br>
 It looks intimidating at first but here is a **breakdown of the entire structure.** <br>
 
+```lua
+Soundtracks = {
+  ["Cutecore Playlist #1"] = {...}, --Songs go here.
+  ["Cutecore Playlist #2"] = {...}, --Songs go here.
+  ["Cutecore Playlist #3"] = {...}, --Songs go here.
+  ["Cutecore Playlist #4"] = {...}, --Songs go here.
+  ["Cutecore Playlist #5"] = {...}, --Songs go here.
+  ["New Playlist"] = {}, --Step 1: Creaate a new playlist
+}
+```
+So we begin by creating a **newline** and then declaring ```["New Playlist"] = {},```. The `"New Playlist"` defines the name of the playlist while the `{},` will define the **songs**. We then fill up the empty table by filling with this schema below
+```lua
+{
+  Id = "rbxassetid://1234567890", --string
+  Title = "The Song Name", --string
+  Volume = 0.5, --number
+},
+```
+
+We then put this entire table inside the `"New Playlist"` by formatting like this below
+```lua
+Soundtracks = {
+  ["Cutecore Playlist #1"] = {...}, --Songs go here.
+  ["Cutecore Playlist #2"] = {...}, --Songs go here.
+  ["Cutecore Playlist #3"] = {...}, --Songs go here.
+  ["Cutecore Playlist #4"] = {...}, --Songs go here.
+  ["Cutecore Playlist #5"] = {...}, --Songs go here.
+  ["New Playlist"] = {
+    {
+      Id = "rbxassetid://1234567890", --string
+      Title = "The Song Name", --string
+      Volume = 0.5, --number
+    },
+  },
+}
+```
+
+We can also add multiple song entries like this
+```lua
+Soundtracks = {
+  ["Cutecore Playlist #1"] = {...}, --Songs go here.
+  ["Cutecore Playlist #2"] = {...}, --Songs go here.
+  ["Cutecore Playlist #3"] = {...}, --Songs go here.
+  ["Cutecore Playlist #4"] = {...}, --Songs go here.
+  ["Cutecore Playlist #5"] = {...}, --Songs go here.
+  ["New Playlist"] = {
+    {
+      Id = "rbxassetid://1234567890", --string
+      Title = "The Song Name", --string
+      Volume = 0.5, --number
+    },
+    {
+      Id = "rbxassetid://1234567891", --string
+      Title = "The Song Name 2", --string
+      Volume = 0.5, --number
+    },
+    {
+      Id = "rbxassetid://1234567892", --string
+      Title = "The Song Name 3", --string
+      Volume = 0.5, --number
+    },
+  },
+}
+```
+
+So with that out of the way lets explain what `Id`, `Title` and `Volume` actually do :3
+| Config Property | Id | Title | Volume |
+| :---: | :---: | :---: | :---: |
+| **Value Type** | SoundID | string | number |
+| **Explanation** | **Plays the SoundID** used for the song entry. **Must be in `rbxasset://` form**<br><img width="398" height="42" alt="image" src="https://github.com/user-attachments/assets/3ddcf67c-2292-43b5-a88b-a56d3ad8e9b4" /><br>e.g. this song has `Id = "rbxassetid://9047104411"` | Displays the Song Game in the radio<br><img width="477" height="80" alt="image" src="https://github.com/user-attachments/assets/93ab71bd-0ba1-4241-9232-12c230ec354f" /><br>e.g. this song has `Title = "Beach Cushions"` | **Adjusts the volume of the song** used for when a song is too quiet or too loud.<br><img width="282" height="16" alt="image" src="https://github.com/user-attachments/assets/83e49fbb-1183-4c8b-b846-c3487004ea4d" /><br>e.g. the song initially came out as too loud so it got set to `Volume = 0.5` |
+
+### Configuration Part 3 (Misconceptions & Traps)  
+One trap people make when setting up **playlists and song entries** and they finish there `{...}` they forgot to add a `,` to end of the table. Because if you dont have the `{...},` the script will break and not work. Also makes sure you song entry contains a `Id`, `Title` and a `Volume` AND they **must have a `,` after the declaration like e.g `Title = "Song Name',` <----**
+
+The Script will also break if you make an empty playlist like this `["Empty Playlist"] = {},` please comment it out by doing `--["Empty Playlist"] = {},` or remove it entirely. While leaving a `Soundtracks = {},` wont break any code it is recommended to add atleast one placeholder even if you dont intend to play music.
+
+And ofcourse if you did paste your `SoundID` yet it wont play or the script breaks. You can watch this video demo of how i like to get my `SoundID`<br>
+<video src="https://github.com/user-attachments/assets/22f77ee9-d0a6-43b2-8907-5b3cc538d737" controls></video>
+
+Also Also, some `SoundID` may not work because **the asset is entirely private/got taken down or DMCAed**
+
 
 # Section 3 - Settings Menu <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
 
 
 # Section 4 - Environment <3
 
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
 
 # Section 5 - Text Chat <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
