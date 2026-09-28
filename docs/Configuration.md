@@ -226,11 +226,11 @@ Here is a breakdown of all properties in a sorted table.
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
 | SettingsTitleAndDesc | List of `{Title,Desc}` | This is a list containing all possible settings, you cannot remove or add any new elements. But you can **change the `Title` or `Desc` to any string** to your likings.<br><img width="545" height="72" alt="image" src="https://github.com/user-attachments/assets/5d8a702c-fa77-45c2-a74c-2e912bee59a7" /><br>e.g. This Music toggle had a modified `Music = {Title = "The Illuminati", Desc = "triangles"},` |
-| AllowAFKToggle | boolean | Determines whether to display the AFK Toggle under settings<br><img width="553" height="67" alt="image" src="https://github.com/user-attachments/assets/e3e820f5-5b8c-4641-b0c9-36c26f121929" /><br>e.g. this AFK Toggle appears when ```AllowAFKToggle = true``` |
+| AllowAFKToggle | boolean | Determines whether to display the AFK Toggle under settings **(DOES NOT AFFECT AFK STATUS)**<br><img width="553" height="67" alt="image" src="https://github.com/user-attachments/assets/e3e820f5-5b8c-4641-b0c9-36c26f121929" /><br>e.g. this AFK Toggle appears when ```AllowAFKToggle = true``` |
 | AllowSprintingToggle | boolean | Determines whether to display the Sprint Toggle under settings. **(Note this will not affect sprinting itself only the toggle button)**<br><img width="547" height="72" alt="image" src="https://github.com/user-attachments/assets/451d5b8f-716e-40eb-bdd3-e9fccf04f4cb" /><br>e.g. this Sprint Toggle appears when ```AllowSprintingToggle = true``` |
 
 
-### Configuration Part 3
+### Configuration Part 3 (Setting Specific UI Configs)
 These last config properties represent the UI portion of Settings, you can modify the colors of the on/off switches, buttons or scrollbars. However these are settings specific for more general UI Manipulation, head over to [The UI Configuration](UIConfiguration.md).
 
 <img width="822" height="505" alt="image" src="https://github.com/user-attachments/assets/e93395db-3aa8-41e2-b27d-c2d6a294635f" /><br>
@@ -238,12 +238,34 @@ The image above represents the Settings Menu configs of UI for Rose of Sharon (R
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-| BoolTrueToggleColor | TopBottomColor3 | EEEE |
-| BoolFalseToggleColor | TopBottomColor3 | EEEE |
-| SwitchablesGradient | [Gradient](Gradient.md) | EEEE |
-| SwitchablesTextColor | Color3 | EEEE |
-| ScrollerGradient | [Gradient](Gradient.md) | EEEE |
-| RoamColor | Color3 | EEEE |
+| BoolTrueToggleColor | TopBottomColor3 | Defines 2 colors with `Top` at the top of the circular toggle and `Bottom` at the bottom of the circular toggle when its on. **This applies to all boolean setting switches.**<br><img width="261" height="222" alt="image" src="https://github.com/user-attachments/assets/b570fe00-60f5-4af7-ad04-afaa20a8bf06" /><br>e.g. All **turned on** toggles are defined as `Top = Color3.new(0.733333, 1, 0)` and `Bottom = Color3.new(0.0431373, 0.894118, 0)` |
+| BoolFalseToggleColor | TopBottomColor3 | Defines 2 colors with `Top` at the top of the circular toggle and `Bottom` at the bottom of the circular toggle when its off. **This applies to all boolean setting switches.**<br><img width="277" height="215" alt="image" src="https://github.com/user-attachments/assets/68693d9e-a514-4afd-a7a4-36c8a317551c" /><br>e.g. All **turned off** toggles are defined as `Top = Color3.new(1, 0, 0.517647)` and `Bottom = Color3.new(0.807843, 0, 0.2)` |
+| SwitchablesGradient | [Gradient](Gradient.md) | Sets the [Color Gradient](Gradient.md) for all **Switchable buttons**<br><img width="243" height="281" alt="image" src="https://github.com/user-attachments/assets/85772fb1-cbbc-41c3-91ce-c01bb08b242a" /><br>e.g. this button has `SwitchablesGradient = {Color = ColorSequence.new(Color3.new(0.984314, 1, 0), Color3.new(0.956863, 0, 0.572549)), Rotation = 92, Offset = Vector2.zero}` <br>**PLEASE REFER TO [GRADIENTS](Gradient.md) TO GET A BETTER CONTEXT** |
+| SwitchablesTextColor | Color3 | Sets the `Color3` of the text inside all **Switchable buttons**<br><img width="542" height="92" alt="image" src="https://github.com/user-attachments/assets/f4694088-6193-4074-8882-e071310355cf" /><br>e.g. This button text **("Day")** inside has ```SwitchablesTextColor = Color3.new(1,1,1)``` |
+| ScrollerGradient | [Gradient](Gradient.md) | Sets the [Color Gradient](Gradient.md) for all **Scrolling buttons**<br><img width="48" height="175" alt="image" src="https://github.com/user-attachments/assets/287957bc-ce1f-4f70-9e63-f26d030a5a35" /><br>e.g. this scrolling button has `ScrollerGradient = {Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(1, 0.192157, 0.85098)), ColorSequenceKeypoint.new(0.5, Color3.new(1, 0.192157, 0.85098)), ColorSequenceKeypoint.new(1, Color3.new(1, 0.160784, 0.482353))}), Rotation = 90, Offset = Vector2.zero}` <br>**PLEASE REFER TO [GRADIENTS](Gradient.md) TO GET A BETTER CONTEXT** |
+| RoamColor | Color3 | Sets the `Color3` of the scrollbar roam element.<br><img width="464" height="48" alt="image" src="https://github.com/user-attachments/assets/19ff07c9-a917-4902-af89-88ba6dc8c2bd" /><br>e.g. This roam element has ```RoamColor = Color3.new(0.254902, 0, 0.2)``` |
+
+
+### Configuration Part 4 (Misconceptions & Traps)  
+One common mistake when setting up tips is **HTML formatting** and the `SanitizeHtmlTags` property. When `SanitizeHtmlTags = false`, typing literals characters like `&`, `>`, `<`, `"` and `'` into the string field of a `{Color3.new(1, 0.360784, 0.745098),"<3 <3 <3 meow :3 omgg kawaii >~< 'o' ",},` will cause the text output to look like this
+
+<img width="417" height="61" alt="image" src="https://github.com/user-attachments/assets/50984cb7-05c3-4daf-b589-6645c972b182" />
+
+So for most cases it is best to leave `SanitizeHtmlTags = true` but if you want to use these characters like `&`, `>`, `<`, `"` and `'` while `SanitizeHtmlTags = false` you will need to instead type `&amp;` for `&`, `&lt;` for `<`, `&gt;` for `>`, `&quot;` for `"` and `&apos;` for `'`. If we do this for our `{Color3.new(1, 0.360784, 0.745098),"&lt;3 &lt;3 &lt;3 meow :3 omgg kawaii &gt;~&lt; &apos;o&apos; ",},` we get this result instead
+
+<img width="425" height="36" alt="image" src="https://github.com/user-attachments/assets/0fb9c137-1add-4195-a819-362231be9ba7" />
+
+However if we leave `SanitizeHtmlTags = true` instead you will just get the literal characters like this
+
+<img width="418" height="60" alt="image" src="https://github.com/user-attachments/assets/846097b3-ae20-4dd1-b69c-66db737f0de7" />
+
+Also for more information on **RichText markup** you can review the [official Roblox Documentation](https://create.roblox.com/docs/ui/rich-text) here ^0^
+
+
+Another common misconception is the `AllowSprintingToggle` property, Most people would assume if this is set to `false` then sprinting will no longer be possible. This is false because all this toggle does is **Determine if you want the ability to sprint as a literal settings option to be available**
+
+
+Also for about Gradients, You can review [Gradients](Gradients.md) or understand what a [ColorSequence](ColorSequence.md) is or Understand what a [Vector2](Vector23.md) does under `Offset = Vector2.zero`
 
 
 # Section 4 - Environment <3
