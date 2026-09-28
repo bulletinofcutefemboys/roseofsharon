@@ -8,6 +8,18 @@
     <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
     <td><a href="#section-2---music-system-3"><b>Section 2 - Music System &lt;3</b></a></td>
   </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
+    <td><a href="#section-3---settings-menu-3"><b>Section 3 - Settings Menu &lt;3 </b></a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
+    <td><a href="#section-4---environment-3"><b>Section 4 - Environment &lt;3</b></a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
+    <td><a href="#section-5---text-chat-3"><b>Section 5 - Text Chat &lt;3 </b></a></td>
+  </tr>
 </table>
 
 <br>
@@ -97,3 +109,12 @@ Here is a breakdown of all properties in a sorted table.
 <img width="390" height="548" alt="image" src="https://github.com/user-attachments/assets/9af0b197-2edc-48b6-9352-939feac663d1" /><br>
 This image represents the Soundtrack nested table structure for Rose of Sharon (RS).<br>
 It looks intimidating at first but here is a **breakdown of the entire structure.** <br>
+
+
+# Section 3 - Settings Menu <3
+
+
+# Section 4 - Environment <3
+
+
+# Section 5 - Text Chat <3
