@@ -86,11 +86,14 @@ Here is a breakdown of all properties in a sorted table.
 | SongSystemBool | boolean | Determines whether if a song system and music sounds should be played<br><img width="560" height="145" alt="image" src="https://github.com/user-attachments/assets/1ce0bcfd-7a14-4e73-9f28-2c56ec7852df" /><br>e.g. the Music Settings Toggle appears when ```SongSystemBool = true``` |
 | SFXToggleBool | boolean | Determines whether to display the SFX Toggle under settings<br><img width="568" height="76" alt="image" src="https://github.com/user-attachments/assets/d374325c-4f49-466d-8175-a098e6d48ae8" /><br>e.g. This appears when ```SFXToggleBool = true``` |
 | CanPlayersChangeMusic | boolean | Sets if players can change the songs using both arrows<br><img width="477" height="80" alt="image" src="https://github.com/user-attachments/assets/93ab71bd-0ba1-4241-9232-12c230ec354f" /><br>e.g. The buttons appear when ```CanPlayersChangeMusic = true``` |
-| CanPlayerSwitchPlaylists | boolean | Sets if players can change the playlists containing multiple songs as defined by the <a href="#configuration-part-2-the-soundtrack-table"><b>Soundtrack table</b></a><br> |
-| ShufflePlaylists | boolean | DAEHO |
-| ShuffleSongs | boolean | DAEHO |
-| MasterVolume | number | DAEHO |
-| SFXMasterVolume | number | DAEHO |
+| CanPlayerSwitchPlaylists | boolean | Sets if players can change the playlists containing multiple songs as defined by the <a href="#configuration-part-2-the-soundtrack-table"><b>Soundtrack table</b></a><br><img width="568" height="94" alt="image" src="https://github.com/user-attachments/assets/6be228a8-344d-4929-8da6-2c0c7b6f6609" /><br>e.g. This appears when ```CanPlayerSwitchPlaylists = true``` |
+| ShufflePlaylists | boolean | Whether you want that everytime the player rejoins the game, they get there playlist shuffled. e.g. when ```ShufflePlaylists = true``` whenever i rejoin, the playlist i get might not be the same as the one i had before i rejoined. If ```ShufflePlaylists = false```, then the playlist does not change randomly when i rejoin and instead it saves my **previous playlist I last had** |
+| ShuffleSongs | boolean | Whether you want that everytime the song ends, a random new song **(from that specific playlist)** plays and does not repeat the same song. If ```ShuffleSongs = false``` then instead it plays in a sequential patterns **(defined by the <a href="#configuration-part-2-the-soundtrack-table"><b>Soundtrack table</b></a>)** regardless if you rejoin or not. |
+| MasterVolume | number | Sets as the volume multiplier for Every song in every playlist<br><img width="526" height="40" alt="image" src="https://github.com/user-attachments/assets/3ec3d3dc-5751-48e5-b611-ab84c03ca5fd" /><br>e.g. This song with an original ***0.5 volume*** has ballooned to ***5.5 volume*** because ```MasterVolume=11``` |
+| SFXMasterVolume | number | Sets as the volume multiplier for Every **Sound FX**<br><img width="157" height="161" alt="image" src="https://github.com/user-attachments/assets/04f6cae8-a5dc-405d-a8f8-cadfe8cedad3" /><br>e.g. when ```SFXMasterVolume = 2``` every sound will have its **volume 2x** |
 
 
 ### Configuration Part 2 (The Soundtrack table)  
+<img width="390" height="548" alt="image" src="https://github.com/user-attachments/assets/9af0b197-2edc-48b6-9352-939feac663d1" /><br>
+This image represents the Soundtrack nested table structure for Rose of Sharon (RS).<br>
+It looks intimidating at first but here is a **breakdown of the entire structure.** <br>
