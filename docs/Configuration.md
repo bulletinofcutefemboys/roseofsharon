@@ -18,6 +18,7 @@
 > <img width="411" height="58" alt="image" src="https://github.com/user-attachments/assets/9a24df2b-4238-41fe-b89d-c89b5638bbc2" />  
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
 
+
 ### Configuration Part 1 (Config Values)  
 <img width="229" height="180" alt="image" src="https://github.com/user-attachments/assets/e249b792-cfc6-4ad7-bfb7-36b8fd2a0aee" /><br>
 The image above represents all possible Loading screen configs for Rose of Sharon (RS)  
@@ -31,6 +32,7 @@ Here is a breakdown of all properties in a sorted table.
 | ParticlesOnIcon | boolean | Whether to display **Expanding Particle VFX** in the loading screen animation<br><img width="1393" height="793" alt="image" src="https://github.com/user-attachments/assets/ecb99d3f-1758-4224-80b1-b75c5f4b01ec" /><br>e.g. this has ```ParticlesOnIcon = true``` |
 | ParticleColor | Color3 | Determines whether what **RGB Value** the expanding particles should be default is<br>```Color.fromRGB(255,255,255)``` |
 | NumberOfParticles | integer | Determines **how much particles** should be rendered in the **Expanding Particle VFX.**<br><img width="1440" height="788" alt="image" src="https://github.com/user-attachments/assets/2cc50c12-b838-4433-9136-02821b6e90cc" /><br>e.g this has ```NumberOfParticles = 1``` |
+
 
 ### Configuration Part 2 (ExtraConfigs)
 <img width="518" height="376" alt="image" src="https://github.com/user-attachments/assets/6ac1d42c-af09-4b31-8964-a7d5ad333ac1" /><br>
@@ -64,14 +66,31 @@ And also if your configurations dont match this AND especially the **module scri
 <img width="518" height="376" alt="image" src="https://github.com/user-attachments/assets/6ac1d42c-af09-4b31-8964-a7d5ad333ac1" /><br>
 Then you may want to add the proper values back or redo instructions on [The Installation Guide](Installation.md)
 
-
 ONE Thing about Color3, A new Color3 Value created from Color3.new must have rgb values from [0,1]. While Color3.fromRGB must be from [0,255]!
+
 
 # Section 2 - Music System <3
 
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
 > <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
 > And inside that ModuleScript it should look like this.<br>
-> <img width="608" height="316" alt="image" src="https://github.com/user-attachments/assets/bf6b32be-e436-4cd3-b4e9-e077d9f582bd" /><br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
 
+### Configuration Part 1 (Everything Else Besides the Soundtracks table)  
+<img width="280" height="168" alt="image" src="https://github.com/user-attachments/assets/b32714cb-a90d-4c01-bea0-1349a5596a87" /><br>
+The image above represents all possible Music System configs for Rose of Sharon (RS)  
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+| SongSystemBool | boolean | Determines whether if a song system and music sounds should be played<br><img width="560" height="145" alt="image" src="https://github.com/user-attachments/assets/1ce0bcfd-7a14-4e73-9f28-2c56ec7852df" /><br>e.g. the Music Settings Toggle appears when ```SongSystemBool = true``` |
+| SFXToggleBool | boolean | Determines whether to display the SFX Toggle under settings<br><img width="568" height="76" alt="image" src="https://github.com/user-attachments/assets/d374325c-4f49-466d-8175-a098e6d48ae8" /><br>e.g. This appears when ```SFXToggleBool = true``` |
+| CanPlayersChangeMusic | boolean | Sets if players can change the songs using both arrows<br><img width="477" height="80" alt="image" src="https://github.com/user-attachments/assets/93ab71bd-0ba1-4241-9232-12c230ec354f" /><br>e.g. The buttons appear when ```CanPlayersChangeMusic = true``` |
+| CanPlayerSwitchPlaylists | boolean | Sets if players can change the playlists containing multiple songs as defined by the <a href="#configuration-part-2-the-soundtrack-table"><b>Soundtrack table</b></a><br> |
+| ShufflePlaylists | boolean | DAEHO |
+| ShuffleSongs | boolean | DAEHO |
+| MasterVolume | number | DAEHO |
+| SFXMasterVolume | number | DAEHO |
+
+
+### Configuration Part 2 (The Soundtrack table)  
