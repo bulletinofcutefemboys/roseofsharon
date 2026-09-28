@@ -265,7 +265,7 @@ Also for more information on **RichText markup** you can review the [official Ro
 Another common misconception is the `AllowSprintingToggle` property, Most people would assume if this is set to `false` then sprinting will no longer be possible. This is false because all this toggle does is **Determine if you want the ability to sprint as a literal settings option to be available**
 
 
-Also for about Gradients, You can review [Gradients](Gradients.md) or understand what a [ColorSequence](ColorSequence.md) is or Understand what a [Vector2](Vector23.md) does under `Offset = Vector2.zero`
+Also for about Gradients, You can review [Gradients](Gradient.md) or understand what a [ColorSequence](ColorSequence.md) is or Understand what a [Vector2](Vector23.md) does under `Offset = Vector2.zero`
 
 
 # Section 4 - Environment <3
