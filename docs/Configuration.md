@@ -238,7 +238,12 @@ The image above represents the Settings Menu configs of UI for Rose of Sharon (R
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-
+| BoolTrueToggleColor | TopBottomColor3 | EEEE |
+| BoolFalseToggleColor | TopBottomColor3 | EEEE |
+| SwitchablesGradient | [Gradient](Gradient.md) | EEEE |
+| SwitchablesTextColor | Color3 | EEEE |
+| ScrollerGradient | [Gradient](Gradient.md) | EEEE |
+| RoamColor | Color3 | EEEE |
 
 
 # Section 4 - Environment <3
