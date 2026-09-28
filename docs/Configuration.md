@@ -231,7 +231,7 @@ Here is a breakdown of all properties in a sorted table.
 
 
 ### Configuration Part 3
-These last config properties represent the UI portion of Settings, you can modify the colors of the on/off switches, buttons or scrollbars. However these are settings specific for more general UI Manipulation, head over to The UI Configuration.
+These last config properties represent the UI portion of Settings, you can modify the colors of the on/off switches, buttons or scrollbars. However these are settings specific for more general UI Manipulation, head over to [The UI Configuration](UIConfiguration.md).
 
 <img width="822" height="505" alt="image" src="https://github.com/user-attachments/assets/e93395db-3aa8-41e2-b27d-c2d6a294635f" /><br>
 The image above represents the Settings Menu configs of UI for Rose of Sharon (RS)  
