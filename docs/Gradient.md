@@ -72,10 +72,10 @@ local Gradient = {
   Offset=Vector2.new(0,3)
 }
 ```
-<img width="540" height="91" alt="image" src="https://github.com/user-attachments/assets/c7db2a08-04c5-44b1-83e8-4c505730a408" />
+<img width="540" height="91" alt="image" src="https://github.com/user-attachments/assets/c7db2a08-04c5-44b1-83e8-4c505730a408" /><br>
+---
 
-
-> Now Imagine same scenario but `Rotation = -37` :3
+> Now Imagine same scenario but `Rotation = 37` :3
 
 <img width="539" height="88" alt="image" src="https://github.com/user-attachments/assets/4e47a65f-c60d-45fd-a80c-923c16efdf89" />
 
@@ -89,4 +89,5 @@ Now lets look at various `Rotation` at **-37 to 37** in 4 different snapshots.
 | 12 | <img width="539" height="86" alt="image" src="https://github.com/user-attachments/assets/3710b7ba-e8e6-4b1f-a504-1c19e218749f" /> |
 | 37 | <img width="539" height="88" alt="image" src="https://github.com/user-attachments/assets/4e47a65f-c60d-45fd-a80c-923c16efdf89" /> |
 
-
+See how they form a circular **sunrise to sunset pattern?**<br>
+Thats how these `Gradients` work and they can be used to modify in config files :D
