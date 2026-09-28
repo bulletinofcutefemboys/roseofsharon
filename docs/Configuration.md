@@ -24,6 +24,7 @@
 
 <br>
 
+
 # Section 1 - Loading Screens <3
 
 > Before we begin, your ReplicatedFirst folder should look like this.  
@@ -82,6 +83,7 @@ ONE Thing about Color3, A new Color3 Value created from Color3.new must have rgb
 
 Also Also, some IconAssetID/SoundStartID may not work because **the asset is entirely private/got taken down or DMCAed**
 
+
 # Section 2 - Music System <3
 
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
@@ -92,7 +94,7 @@ Also Also, some IconAssetID/SoundStartID may not work because **the asset is ent
 
 ### Configuration Part 1 (Everything Else Besides the Soundtracks table)  
 <img width="280" height="168" alt="image" src="https://github.com/user-attachments/assets/b32714cb-a90d-4c01-bea0-1349a5596a87" /><br>
-The image above represents all possible Music System configs for Rose of Sharon (RS)  
+The image above represents some Music System configs for Rose of Sharon (RS)  
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
@@ -182,6 +184,7 @@ So with that out of the way lets explain what `Id`, `Title` and `Volume` actuall
 | **Value Type** | SoundID | string | number |
 | **Explanation** | **Plays the SoundID** used for the song entry. **Must be in `rbxassetid://` form**<br><img width="398" height="42" alt="image" src="https://github.com/user-attachments/assets/3ddcf67c-2292-43b5-a88b-a56d3ad8e9b4" /><br>e.g. this song has `Id = "rbxassetid://9047104411"` | Displays the Song Name in the radio<br><img width="477" height="80" alt="image" src="https://github.com/user-attachments/assets/93ab71bd-0ba1-4241-9232-12c230ec354f" /><br>e.g. this song has `Title = "Beach Cushions"` | **Adjusts the volume of the song** used for when a song is too quiet or too loud.<br><img width="282" height="16" alt="image" src="https://github.com/user-attachments/assets/83e49fbb-1183-4c8b-b846-c3487004ea4d" /><br>e.g. the song initially came out as too loud so it got set to `Volume = 0.5` |
 
+
 ### Configuration Part 3 (Misconceptions & Traps)  
 One trap people make when setting up **playlists and song entries** and they finish there `{...}` they forgot to add a `,` to end of the table. Because if you dont have the `{...},` the script will break and not work. Also makes sure your song entry contains a `Id`, `Title` and a `Volume` AND they **must have a `,` after the declaration like e.g `Title = "Song Name",` <----**
 
@@ -198,8 +201,33 @@ Also Also, some `SoundID` may not work because **the asset is entirely private/g
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
 > <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
 > And inside that ModuleScript it should look like this.<br>
-> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> <img width="852" height="738" alt="image" src="https://github.com/user-attachments/assets/358341e3-bafe-4816-88be-f8585ba675cb" /><br>
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+### Configuration Part 1 (Tips Config)  
+Tips are a feature in our framework where it allows you to randomly display system messages with built in **RichText** or **Html parsing**. You can use this to promote your other games, outfits, ugc or remind people anything :3  
+
+<img width="816" height="170" alt="image" src="https://github.com/user-attachments/assets/3c6bea1e-0ddb-44e7-be1b-628a0a012ac6" /><br>
+The image above represents some Settings Menu configs for Rose of Sharon (RS)  
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+| ShowTips | boolean | Sets if you want to have occasional tips show in chat!<br><img width="465" height="80" alt="image" src="https://github.com/user-attachments/assets/e3bf7492-cc4b-4c8d-b047-893631a2dd63" /><br>e.g. This tip appears when ```ShowTips = true``` |
+| SanitizeHtmlTags | boolean | Determines whether you want to enable **rich text formatting** via html tags.<br><img width="463" height="135" alt="image" src="https://github.com/user-attachments/assets/90e7e5e6-abe0-426b-8947-c1e318618190" /><br>e.g. the raw text for this when `SanitizeHtmlTags = false` is `<font size='44'>Please favorite and like the game! &lt;~&gt;</font>` |
+| Tips | List of {Color3,string} | A defined list of `{Color3,string},` where the `Color3` can be set to any color and `string` is the actual message (tip).<br><img width="810" height="105" alt="image" src="https://github.com/user-attachments/assets/70432289-86b9-4e27-8de0-8c37b1d3fb41" /><br>Notice how theres a comma after every `{Color3,string}`, This is so the script doesnt break. |
+| TipShowFrequency | number | Sets the period (in seconds) of when to display a randomized tip message. The Period is determined by `T*(1+r)` with r being a `random number from 0 to 1`<br><img width="468" height="266" alt="image" src="https://github.com/user-attachments/assets/03483192-2199-4f1e-b612-8a0dec004ce1" /><br>e.g. this happens when you set `TipShowFrequency = 0.3` |
+
+
+### Configuration Part 2 (Settings Desc & Titles + Others)  
+<img width="1027" height="356" alt="image" src="https://github.com/user-attachments/assets/3230e34e-836b-4b8c-8d79-560850552ad8" /><br>
+The image above represents some Settings Menu configs for Rose of Sharon (RS)  
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+| SettingsTitleAndDesc | List of `{Title,Desc}` | EXPLAINE |
+| AllowAFKToggle | boolean | EXPLAINE |
+| AllowSprintingToggle | boolean | EXPLAINE |
 
 
 # Section 4 - Environment <3
