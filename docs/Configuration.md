@@ -101,7 +101,7 @@ Here is a breakdown of all properties in a sorted table.
 | CanPlayersChangeMusic | boolean | Sets if players can change the songs using both arrows<br><img width="477" height="80" alt="image" src="https://github.com/user-attachments/assets/93ab71bd-0ba1-4241-9232-12c230ec354f" /><br>e.g. The buttons appear when ```CanPlayersChangeMusic = true``` |
 | CanPlayerSwitchPlaylists | boolean | Sets if players can change the playlists containing multiple songs as defined by the <a href="#configuration-part-2-the-soundtrack-table"><b>Soundtrack table</b></a><br><img width="568" height="94" alt="image" src="https://github.com/user-attachments/assets/6be228a8-344d-4929-8da6-2c0c7b6f6609" /><br>e.g. This appears when ```CanPlayerSwitchPlaylists = true``` |
 | ShufflePlaylists | boolean | Whether you want that everytime the player rejoins the game, they get there playlist shuffled. e.g. when ```ShufflePlaylists = true``` whenever i rejoin, the playlist i get might not be the same as the one i had before i rejoined. If ```ShufflePlaylists = false```, then the playlist does not change randomly when i rejoin and instead it saves my **previous playlist I last had** |
-| ShuffleSongs | boolean | Whether you want that everytime the song ends, a random new song **(from that specific playlist)** plays and does not repeat the same song. If ```ShuffleSongs = false``` then instead it plays in a sequential patterns **(defined by the <a href="#configuration-part-2-the-soundtrack-table"><b>Soundtrack table</b></a>)** regardless if you rejoin or not. |
+| ShuffleSongs | boolean | Whether you want that everytime the song ends, a random new song **(from that specific playlist)** plays and does not repeat the same song. If ```ShuffleSongs = false``` then instead it plays in a sequential pattern **(defined by the <a href="#configuration-part-2-the-soundtrack-table"><b>Soundtrack table</b></a>)** regardless if you rejoin or not. |
 | MasterVolume | number | Sets as the volume multiplier for Every song in every playlist<br><img width="526" height="40" alt="image" src="https://github.com/user-attachments/assets/3ec3d3dc-5751-48e5-b611-ab84c03ca5fd" /><br>e.g. This song with an original ***0.5 volume*** has ballooned to ***5.5 volume*** because ```MasterVolume=11``` |
 | SFXMasterVolume | number | Sets as the volume multiplier for Every **Sound FX**<br><img width="157" height="161" alt="image" src="https://github.com/user-attachments/assets/04f6cae8-a5dc-405d-a8f8-cadfe8cedad3" /><br>e.g. when ```SFXMasterVolume = 2``` every sound will have its **volume 2x** |
 
@@ -118,7 +118,7 @@ Soundtracks = {
   ["Cutecore Playlist #3"] = {...}, --Songs go here.
   ["Cutecore Playlist #4"] = {...}, --Songs go here.
   ["Cutecore Playlist #5"] = {...}, --Songs go here.
-  ["New Playlist"] = {}, --Step 1: Creaate a new playlist
+  ["New Playlist"] = {}, --Step 1: Create a new playlist
 }
 ```
 So we begin by creating a **newline** and then declaring ```["New Playlist"] = {},```. The `"New Playlist"` defines the name of the playlist while the `{},` will define the **songs**. We then fill up the empty table by filling with this schema below
@@ -180,10 +180,10 @@ So with that out of the way lets explain what `Id`, `Title` and `Volume` actuall
 | Config Property | Id | Title | Volume |
 | :---: | :---: | :---: | :---: |
 | **Value Type** | SoundID | string | number |
-| **Explanation** | **Plays the SoundID** used for the song entry. **Must be in `rbxasset://` form**<br><img width="398" height="42" alt="image" src="https://github.com/user-attachments/assets/3ddcf67c-2292-43b5-a88b-a56d3ad8e9b4" /><br>e.g. this song has `Id = "rbxassetid://9047104411"` | Displays the Song Game in the radio<br><img width="477" height="80" alt="image" src="https://github.com/user-attachments/assets/93ab71bd-0ba1-4241-9232-12c230ec354f" /><br>e.g. this song has `Title = "Beach Cushions"` | **Adjusts the volume of the song** used for when a song is too quiet or too loud.<br><img width="282" height="16" alt="image" src="https://github.com/user-attachments/assets/83e49fbb-1183-4c8b-b846-c3487004ea4d" /><br>e.g. the song initially came out as too loud so it got set to `Volume = 0.5` |
+| **Explanation** | **Plays the SoundID** used for the song entry. **Must be in `rbxassetid://` form**<br><img width="398" height="42" alt="image" src="https://github.com/user-attachments/assets/3ddcf67c-2292-43b5-a88b-a56d3ad8e9b4" /><br>e.g. this song has `Id = "rbxassetid://9047104411"` | Displays the Song Name in the radio<br><img width="477" height="80" alt="image" src="https://github.com/user-attachments/assets/93ab71bd-0ba1-4241-9232-12c230ec354f" /><br>e.g. this song has `Title = "Beach Cushions"` | **Adjusts the volume of the song** used for when a song is too quiet or too loud.<br><img width="282" height="16" alt="image" src="https://github.com/user-attachments/assets/83e49fbb-1183-4c8b-b846-c3487004ea4d" /><br>e.g. the song initially came out as too loud so it got set to `Volume = 0.5` |
 
 ### Configuration Part 3 (Misconceptions & Traps)  
-One trap people make when setting up **playlists and song entries** and they finish there `{...}` they forgot to add a `,` to end of the table. Because if you dont have the `{...},` the script will break and not work. Also makes sure you song entry contains a `Id`, `Title` and a `Volume` AND they **must have a `,` after the declaration like e.g `Title = "Song Name',` <----**
+One trap people make when setting up **playlists and song entries** and they finish there `{...}` they forgot to add a `,` to end of the table. Because if you dont have the `{...},` the script will break and not work. Also makes sure your song entry contains a `Id`, `Title` and a `Volume` AND they **must have a `,` after the declaration like e.g `Title = "Song Name",` <----**
 
 The Script will also break if you make an empty playlist like this `["Empty Playlist"] = {},` please comment it out by doing `--["Empty Playlist"] = {},` or remove it entirely. While leaving a `Soundtracks = {},` wont break any code it is recommended to add atleast one placeholder even if you dont intend to play music.
 
