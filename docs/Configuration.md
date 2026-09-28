@@ -225,9 +225,20 @@ The image above represents some Settings Menu configs for Rose of Sharon (RS)
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-| SettingsTitleAndDesc | List of `{Title,Desc}` | EXPLAINE |
-| AllowAFKToggle | boolean | EXPLAINE |
-| AllowSprintingToggle | boolean | EXPLAINE |
+| SettingsTitleAndDesc | List of `{Title,Desc}` | This is a list containing all possible settings, you cannot remove or add any new elements. But you can **change the `Title` or `Desc` to any string** to your likings.<br><img width="545" height="72" alt="image" src="https://github.com/user-attachments/assets/5d8a702c-fa77-45c2-a74c-2e912bee59a7" /><br>e.g. This Music toggle had a modified `Music = {Title = "The Illuminati", Desc = "triangles"},` |
+| AllowAFKToggle | boolean | Determines whether to display the AFK Toggle under settings<br><img width="553" height="67" alt="image" src="https://github.com/user-attachments/assets/e3e820f5-5b8c-4641-b0c9-36c26f121929" /><br>e.g. this AFK Toggle appears when ```AllowAFKToggle = true``` |
+| AllowSprintingToggle | boolean | Determines whether to display the Sprint Toggle under settings. **(Note this will not affect sprinting itself only the toggle button)**<br><img width="547" height="72" alt="image" src="https://github.com/user-attachments/assets/451d5b8f-716e-40eb-bdd3-e9fccf04f4cb" /><br>e.g. this Sprint Toggle appears when ```AllowSprintingToggle = true``` |
+
+
+### Configuration Part 3
+These last config properties represent the UI portion of Settings, you can modify the colors of the on/off switches, buttons or scrollbars. However these are settings specific for more general UI Manipulation, head over to The UI Configuration.
+
+<img width="822" height="505" alt="image" src="https://github.com/user-attachments/assets/e93395db-3aa8-41e2-b27d-c2d6a294635f" /><br>
+The image above represents the Settings Menu configs of UI for Rose of Sharon (RS)  
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+
 
 
 # Section 4 - Environment <3
