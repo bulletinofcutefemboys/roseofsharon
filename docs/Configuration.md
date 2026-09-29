@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
-    <td><a href="#section-6---sound-effects-3"><b>Section 6 - Sound Effects &lt;3 </b></a></td>
+    <td><a href="#section-6---chat-tags-3"><b>Section 6 - Chat Tags &lt;3 </b></a></td>
   </tr>
 </table>
 
@@ -290,7 +290,7 @@ Also for about Gradients, You can review [Gradients](Gradient.md) or understand 
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
 
 
-# Section 6 - Sound Effects <3
+# Section 6 - Chat Tags <3
 
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
 > <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
