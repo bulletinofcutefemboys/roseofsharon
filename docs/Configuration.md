@@ -20,6 +20,10 @@
     <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
     <td><a href="#section-5---text-chat-3"><b>Section 5 - Text Chat &lt;3 </b></a></td>
   </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
+    <td><a href="#section-6---sound-effects-3"><b>Section 6 - Sound Effects &lt;3 </b></a></td>
+  </tr>
 </table>
 
 <br>
@@ -278,6 +282,15 @@ Also for about Gradients, You can review [Gradients](Gradient.md) or understand 
 
 
 # Section 5 - Text Chat <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+# Section 6 - Sound Effects <3
 
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
 > <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
