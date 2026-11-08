@@ -277,7 +277,7 @@ Also for about Gradients, You can review [Gradients](Gradient.md) or understand 
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
 > <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
 > And inside that ModuleScript it should look like this.<br>
-> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> <img width="392" height="277" alt="image" src="https://github.com/user-attachments/assets/0b85159e-284c-49ef-a723-bb4e84bce4d3" /><br>
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
 
 
