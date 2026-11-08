@@ -48,10 +48,7 @@ We will see this UI pop up on studio, To actually modify colors and manipulate t
 
 | Here is a video of me executing that sequence |
 | :---: |
-| -37 |
-
-
-https://github.com/user-attachments/assets/609d53ef-018f-433f-bc1a-5f66adf7ec3f
+| <video src="https://github.com/user-attachments/assets/609d53ef-018f-433f-bc1a-5f66adf7ec3f" controls></video> |
 
 
 
