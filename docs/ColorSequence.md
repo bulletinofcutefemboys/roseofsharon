@@ -28,4 +28,14 @@ local MyRainbow = ColorSequence.new({
 Notice how in each `ColorSequenceKeypoint.new`, it takes in 2 values. The first one takes a `number` ranging from `t=0` to `t=1`. This determines the **"time" or "alpha"** of the Color Sequence or how much far it sits in the `ColorSequence`.<br><br>
 <img width="472" height="252" alt="image" src="https://github.com/user-attachments/assets/03713ffc-f182-4f62-8fbe-6fc028487044" /><br>
 The second value takes a traditional `Color3` value which at a specified `t` will be **that specific color** as defined by `local Example = Color3.new(1, 0, 0)`.<br><br>
-S
+Also another fact is that these `ColorSequenceKeypoint.new` time values **must be ascending**. So as you notice below Element 2 has a higher `t` value than Element 3's `t` value. This violates the constructor and will yield an error D:
+```lua
+local MyRainbow = ColorSequence.new({
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+	ColorSequenceKeypoint.new(2/6, Color3.fromRGB(255, 255, 0)), -- t = 2 / 6
+	ColorSequenceKeypoint.new(1/6, Color3.fromRGB(0, 255, 0)), -- t = 1 / 6
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0)),
+})
+```
+# Other Easier Way to generate ColorSequences
+If using a Luau script to generate `ColorSequence` values seems very complex to do and confusing to execute. We actually got an easier way to make `ColorSequence` using 
