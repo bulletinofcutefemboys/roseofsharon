@@ -91,3 +91,9 @@ Now lets look at various `Rotation` at **-37 to 37** in 4 different snapshots.
 
 See how they form a circular **sunrise to sunset pattern?**<br>
 Thats how these `Gradients` work and they can be used to modify in config files :D
+
+# Fast Way to generate gradients :D
+Since Rose of Sharon has a way to convert native `UIGradients` found like this one, <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" />. You can actually use one of our plugins which you can [download here](https://create.roblox.com/store/asset/75945708279553/Rose-of-Sharon-UIGradient-To-Gradient-Parser) or review [The source code]().
+
+
+
