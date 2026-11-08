@@ -45,9 +45,13 @@ Now click on the `Color` property once and then click on the `...` as highlighte
 <img width="618" height="170" alt="image" src="https://github.com/user-attachments/assets/f69abd30-8ed0-4554-bdd1-a84d0c7d10b4" /><br>
 <br>
 We will see this UI pop up on studio, To actually modify colors and manipulate the gradient, lets say we want to change the green keypoint to White and then make a new keypoint at `t=0.8` and then delete a keypoint at `t=5/6`<br>
+
 | Here is a video of me executing that sequence |
-| :=: |
-| VIDEO |
+| :---: |
+| -37 |
+
+
+https://github.com/user-attachments/assets/609d53ef-018f-433f-bc1a-5f66adf7ec3f
 
 
 
