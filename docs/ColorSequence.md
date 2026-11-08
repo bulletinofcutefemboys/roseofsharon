@@ -40,8 +40,15 @@ local MyRainbow = ColorSequence.new({
 # Other Easier Way to generate ColorSequences
 If using a Luau script to generate `ColorSequence` values seems very complex to do and confusing to execute. We actually got an easier way to make `ColorSequence` using <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" />s. To begin lets make a new `UIGradient` object in the explorer and then we navigate to the properties tab, your properties tab should look like this below<br>
 <img width="567" height="161" alt="image" src="https://github.com/user-attachments/assets/c98dc533-5578-4c41-890e-628e54e24f6c" /><br>
-Now click on the `Color` property once and then click on the `...` as highlighted with the red circle.
+Now click on the `Color` property once and then click on the `...` as highlighted with the red circle.<br>
 <img width="570" height="37" alt="image" src="https://github.com/user-attachments/assets/61832c30-f8e8-458d-8e74-f2ac430c8020" /><br>
+<img width="618" height="170" alt="image" src="https://github.com/user-attachments/assets/f69abd30-8ed0-4554-bdd1-a84d0c7d10b4" /><br>
+<br>
+We will see this UI pop up on studio, To actually modify colors and manipulate the gradient, lets say we want to change the green keypoint to White and then make a new keypoint at `t=0.8` and then delete a keypoint at `t=5/6`<br>
+| Here is a video of me executing that sequence |
+| :=: |
+| VIDEO |
+
 
 
 Since Rose of Sharon has a way to convert native `UIGradients` found like this one, <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" />. You can actually use one of our plugins which you can [download here](https://create.roblox.com/store/asset/75945708279553/Rose-of-Sharon-UIGradient-To-Gradient-Parser) or review [The source code](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/src/plugins/RSUIGradient2Gradient.rbxmx).
