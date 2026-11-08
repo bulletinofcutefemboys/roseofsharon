@@ -93,7 +93,21 @@ See how they form a circular **sunrise to sunset pattern?**<br>
 Thats how these `Gradients` work and they can be used to modify in config files :D
 
 # Fast Way to generate gradients :D
-Since Rose of Sharon has a way to convert native `UIGradients` found like this one, <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" />. You can actually use one of our plugins which you can [download here](https://create.roblox.com/store/asset/75945708279553/Rose-of-Sharon-UIGradient-To-Gradient-Parser) or review [The source code]().
+Since Rose of Sharon has a way to convert native `UIGradients` found like this one, <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" />. You can actually use one of our plugins which you can [download here](https://create.roblox.com/store/asset/75945708279553/Rose-of-Sharon-UIGradient-To-Gradient-Parser) or review [The source code](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/src/plugins/RSUIGradient2Gradient.rbxmx).
 
+To actually use this plugin and what each of the UI actually means heres a small guide on how to easily convert <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" /> objects into pastable code used in the RoseOfSharon config script.
 
-
+<img width="793" height="391" alt="image" src="https://github.com/user-attachments/assets/90791702-275a-4f20-906a-c519853bd03f" /><br>
+First of all we need to select **Any UIGradient Object** in the explorer tab. Lets say Ill choose this one below<br>
+<img width="190" height="280" alt="image" src="https://github.com/user-attachments/assets/92aa9314-2b5b-48b5-9a64-0a9a7b6439cd" /><br>
+And then I will click the **Choose** button so the plugin knows which one to parse into pastable code :3 Next the "Click to find me!" button is simply a convenience feature for when your workspace is too big and itll find it and select it for you in the workspace. But after we have selected our desired UIGradient, you can modify the values below here in the **properties tab** and the properties as described and explained before.<br>
+<img width="569" height="85" alt="image" src="https://github.com/user-attachments/assets/984b686f-2f77-4c43-be06-e0db54cee5e8" /><br>
+Once that is ready you can then finally click the **Parse UIGradient to Gradient** button and a TextBox with pastable text will appear at the bottom, based on the properties I set I should get<br>
+```lua
+{
+	Color=ColorSequence.new(Color3.new(1, 1, 1)),
+	Rotation=0,
+	Offset=Vector2.zero,
+},
+```
+In which I can then paste this as the value of any `Gradient={...},` inside the Rose Of Sharon config script.
