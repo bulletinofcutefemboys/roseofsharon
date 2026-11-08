@@ -50,7 +50,7 @@ We will see this UI pop up on studio, To actually modify colors and manipulate t
 | :---: |
 | <video src="https://github.com/user-attachments/assets/9a271fc0-b547-4abf-8fc3-99f41130227a" controls></video> |
 
-
+# Now How do I convert this UIGradient object to Code???
 Since Rose of Sharon has a way to convert native `UIGradients` found like this one, <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" />. You can actually use one of our plugins which you can [download here](https://create.roblox.com/store/asset/75945708279553/Rose-of-Sharon-UIGradient-To-Gradient-Parser) or review [The source code](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/src/plugins/RSUIGradient2Gradient.rbxmx).
 
 To actually use this plugin and what each of the UI actually means heres a small guide on how to easily convert <img width="111" height="19" alt="image" src="https://github.com/user-attachments/assets/332e2dd3-b99a-4f00-9bac-a217bbe4d007" /> objects into pastable code used in the RoseOfSharon config script.
