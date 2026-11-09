@@ -141,9 +141,9 @@ Parse.ParseType = {
 			local honhai="ColorSequence.new({\n"
 			for i=1,#cgk do
 				local K=cgk[i]
-				honhai..="	ColorSequenceKeypoint.new("..tostring(K.Time)..","..Parse.ParseType.Color3(K.Value).."),\n"
+				honhai..="		ColorSequenceKeypoint.new("..tostring(K.Time)..","..Parse.ParseType.Color3(K.Value).."),\n"
 			end
-			return honhai.."})"
+			return honhai.."	})"
 		end
 	end,
 }
