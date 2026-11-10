@@ -3,26 +3,32 @@
   <tr>
     <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
     <td><a href="#section-1---loading-screens-3"><b>Section 1 - Loading Screens &lt;3 </b></a></td>
+    <td><a href="#section-7---sound-effects-3"><b>Section 7 - Sound Effects &lt;3 </b></a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
     <td><a href="#section-2---music-system-3"><b>Section 2 - Music System &lt;3</b></a></td>
+    <td><a href="#section-8---notifications-3"><b>Section 8 - Notifications &lt;3 </b></a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
     <td><a href="#section-3---settings-menu-3"><b>Section 3 - Settings Menu &lt;3 </b></a></td>
+    <td><a href="#section-9---incentives-3"><b>Section 9 - Incentives &lt;3 </b></a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
     <td><a href="#section-4---environment-3"><b>Section 4 - Environment &lt;3</b></a></td>
+    <td><a href="#section-10---ui-customization-3"><b>Section 10 - UI Customization &lt;3 </b></a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/4b02dde0-bc11-4659-9413-c5134fdcd1c7" height="32" width="32"/></td>
     <td><a href="#section-5---text-chat-3"><b>Section 5 - Text Chat &lt;3 </b></a></td>
+    <td><a href="#section-11---general-3"><b>Section 11 - General &lt;3 </b></a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/16f48b7d-c44e-4e97-802a-5ccddd56b60e" height="32" width="32"/></td>
     <td><a href="#section-6---chat-tags-3"><b>Section 6 - Chat Tags &lt;3 </b></a></td>
+    <td><a href="#section-12---misc-3"><b>Section 12 - Misc &lt;3 </b></a></td>
   </tr>
 </table>
 
@@ -235,7 +241,7 @@ Here is a breakdown of all properties in a sorted table.
 
 
 ### Configuration Part 3 (Setting Specific UI Configs)
-These last config properties represent the UI portion of Settings, you can modify the colors of the on/off switches, buttons or scrollbars. However these are settings specific for more general UI Manipulation, head over to [The UI Configuration](UIConfiguration.md).
+These last config properties represent the UI portion of Settings, you can modify the colors of the on/off switches, buttons or scrollbars. However these are settings specific for more general UI Manipulation, head over to [The UI Configuration](#section-10---ui-customization-3).
 
 <img width="822" height="505" alt="image" src="https://github.com/user-attachments/assets/e93395db-3aa8-41e2-b27d-c2d6a294635f" /><br>
 The image above represents the Settings Menu configs of UI for Rose of Sharon (RS)  
@@ -344,3 +350,52 @@ Here is a breakdown of all properties in a sorted table.
 > And inside that ModuleScript it should look like this.<br>
 > <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+# Section 7 - Sound Effects <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+# Section 8 - Notifications <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+# Section 9 - Incentives <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+# Section 10 - UI Customization <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+# Section 11 - General <3
+
+> Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
+> <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
+> And inside that ModuleScript it should look like this.<br>
+> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+# Section 12 - Misc <3
+meow WIP
