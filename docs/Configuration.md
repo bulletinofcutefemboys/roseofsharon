@@ -281,6 +281,22 @@ Also for about Gradients, You can review [Gradients](Gradient.md) or understand 
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
 
 
+### Configuration Part 1 (The Environment)  
+You may have seen this scary looking table inside your **Environments Table config**, with a bunch of config values, arbitrary numbers and confusing terminology like `EnvironmentDiffuseScale` and `ExposureCompensation` or `ColorShift_Top` but what ill about to show you soon will make creating environments very fun without ever touching this big mess below
+<img width="724" height="1326" alt="image" src="https://github.com/user-attachments/assets/d55e1d6f-ac0c-4097-91fb-17c8961d58b0" /><br>
+So what we will do instead is use a plugin that we have made and its called **Environment To Table Parser** and we can [download here](https://create.roblox.com/store/asset/72686076950875/Rose-Of-Sharon-Environment-To-Table-Parser) or review [The source code](https://github.com/bulletinofcutefemboys/roseofsharon/blob/main/src/plugins/EnvironmentToTableParser.rbxmx). Once you have the plugin in your studio we will find a button with a **rose and this title**<br>
+<img width="149" height="169" alt="image" src="https://github.com/user-attachments/assets/108dbc07-e78e-47a4-9efd-c9aee05e8ac4" /><br>
+
+We click it and we will notice that the UI is all complex and weird, but do not worry because the `TypeEnvironment Name` field is typable and this is the name of the environment like for example, TypeEnvironment Name is set to `mroewnya (≧∇≦)` this means when we export we will get <img width="270" height="18" alt="image" src="https://github.com/user-attachments/assets/583949e5-023d-4049-b97c-27b1a62607e9" /> along side with other generated data 
+<br>
+<img width="795" height="398" alt="image" src="https://github.com/user-attachments/assets/03936233-cb3a-4096-9242-ddca8d72fabe" /><br>
+So when we **click the Parse Environment To Table button**, what the plugin will do is read your entire Lighting configuration properties, skyboxes, objects inside the Lighting folder etc. and then convert it to a big table that can be used in the `Environments` configuration. Which means we dont even have to touch a single line :D
+<br><br>
+So because we are now manipulating the Lighting Environment in our studio as shown here below, If you would like to dig deep into lighting then I would [recommend this video](https://www.youtube.com/watch?v=99C5K1cdql8). So here we have our scene and then the properties to modify<br>
+| Lighting Properties | The Scenary |
+| :---: | :---: |
+| <img width="170" height="163" alt="image" src="https://github.com/user-attachments/assets/48c69505-9757-4cee-830f-41c7bb387e74" /> | <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/75e0f118-3cca-49f9-b598-f983c5175905" /> |
+
 # Section 5 - Text Chat <3
 
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
