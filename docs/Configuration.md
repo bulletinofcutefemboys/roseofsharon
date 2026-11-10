@@ -219,7 +219,7 @@ Here is a breakdown of all properties in a sorted table.
 | :---: | :---: | :---: |
 | ShowTips | boolean | Sets if you want to have occasional tips show in chat!<br><img width="465" height="80" alt="image" src="https://github.com/user-attachments/assets/e3bf7492-cc4b-4c8d-b047-893631a2dd63" /><br>e.g. This tip appears when ```ShowTips = true``` |
 | SanitizeHtmlTags | boolean | Determines whether you want to enable **rich text formatting** via html tags.<br><img width="463" height="135" alt="image" src="https://github.com/user-attachments/assets/90e7e5e6-abe0-426b-8947-c1e318618190" /><br>e.g. the raw text for this when `SanitizeHtmlTags = false` is `<font size='44'>Please favorite and like the game! &lt;~&gt;</font>` |
-| Tips | List of {Color3,string} | A defined list of `{Color3,string},` where the `Color3` can be set to any color and `string` is the actual message (tip).<br><img width="810" height="105" alt="image" src="https://github.com/user-attachments/assets/70432289-86b9-4e27-8de0-8c37b1d3fb41" /><br>Notice how theres a comma after every `{Color3,string}`, This is so the script doesnt break. |
+| Tips | List of `{Color3,string}` | A defined list of `{Color3,string},` where the `Color3` can be set to any color and `string` is the actual message (tip).<br><img width="810" height="105" alt="image" src="https://github.com/user-attachments/assets/70432289-86b9-4e27-8de0-8c37b1d3fb41" /><br>Notice how theres a comma after every `{Color3,string}`, This is so the script doesnt break. |
 | TipShowFrequency | number | Sets the period (in seconds) of when to display a randomized tip message. The Period is determined by `T*(1+r)` with r being a `random number from 0 to 1`<br><img width="468" height="266" alt="image" src="https://github.com/user-attachments/assets/03483192-2199-4f1e-b612-8a0dec004ce1" /><br>e.g. this happens when you set `TipShowFrequency = 0.3` |
 
 
@@ -302,7 +302,27 @@ So because we are now manipulating the Lighting Environment in our studio as sho
 | `SunRays` + Other properties added | <img width="1100" height="1044" alt="image" src="https://github.com/user-attachments/assets/600593f0-9710-460c-a98f-5a16db8a8853" /> | Configured the `Intensity` property to `0.073` and then the `Spread` to `0.65` which gives it a more realistic sun ray like effect u see irl :3 <br><img width="361" height="62" alt="image" src="https://github.com/user-attachments/assets/6c83f416-2e85-41fe-81ad-430658e9e5b1" /> |
 | `ColorCorrection` + Other properties added | <img width="712" height="700" alt="image" src="https://github.com/user-attachments/assets/ded12df3-b6ba-4acc-a794-e8273ba7d631" /> | Adjusted the `Saturation` by `0.2` and `Contrast` by `0.2` while creating a **very very very pale magenta** `Tint` to make daa scene pink<br><img width="375" height="106" alt="image" src="https://github.com/user-attachments/assets/e219c59b-5516-4f4a-b18e-d2835581019e" /> |
 | Supplementary Blurring Effects added: `Bloom`, `UIOpeningBlur` and `DepthOfField` + other properties | <img width="715" height="699" alt="image" src="https://github.com/user-attachments/assets/347d6474-3b56-472a-8bac-61042ab584fc" /> | `Bloom` is an interesting effect because its not really a blurring effect but it has to do with the sun hitting on the parts and reflecting back, for more detail check [daa roblox documentation 4 BloomEffects](https://create.roblox.com/docs/reference/engine/classes/BloomEffect). Also here are the values I changed.<br><img width="335" height="86" alt="image" src="https://github.com/user-attachments/assets/ddeadd26-5bbf-4245-8b3b-4a56f447593e" /><br>The `DepthOfField` effect is also interesting because it is a blurring effect but it depends on your FOV, eyesight and near/far sidedness. For more info [check the roblox documentation](https://create.roblox.com/docs/reference/engine/classes/DepthOfFieldEffect). And these are the values I used for my `DepthOfField` effect<br><img width="347" height="107" alt="image" src="https://github.com/user-attachments/assets/24611f52-1c6e-4d90-8aa7-b9bf20b84ea8" /><br>And then we have the `UIOpeningBlur` which is interesting in itself because the plugin does not **RECOGNIZE** this and **YOU MUST MANUALLY SET THE SIZE AND IT MUST BE PRESENT IN THE LIGHTING OR IT WILL BREAK**<br><img width="335" height="40" alt="image" src="https://github.com/user-attachments/assets/6acd60a8-eafb-47a8-ab8e-83ffd120c847" /> |
+<br>
+So once we have finally configured a beautiful environment ready to export into the config module, we will finally go to the **Environment To Table Parser** and click that **Parse Environment To Table** button. Once we click that button we should receive a long string below with your custom environment name mine is `mroewnya (≧∇≦)` and the underlying data below. Your string should look similiar to this below.<br>
+<img width="727" height="450" alt="image" src="https://github.com/user-attachments/assets/0a02d2e3-27c0-4c9f-b34b-896c38907f32" /><br>
 
+> Note that this string looks very small and looks liek a weird beehive shape thingy.
+
+Afterwords we copy that string and then we make a new line by pressing the enter key and you should get something similiar to this <br>
+<img width="336" height="148" alt="image" src="https://github.com/user-attachments/assets/597c389a-b92b-499e-ac1c-c1dc6af6f9a5" /><br>
+And we then finally paste the string into the table and we should get this below.<br>
+<img width="263" height="171" alt="image" src="https://github.com/user-attachments/assets/102b9199-26e9-47bc-ae52-b8af2061dc4b" /><br>
+
+
+## Configuration Part 2 (Miscellaneous)
+So below shows all of the possible settings for the Environment section of **Rose Of Sharon config**. Some of these properties like `MarkedAsNight` are interesting because it allows you to add lanterns, glowing lights and more whenever an environment is marked as **night**.
+<img width="392" height="277" alt="image" src="https://github.com/user-attachments/assets/0b85159e-284c-49ef-a723-bb4e84bce4d3" /><br>
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+| MarkedAsNight | Map of booleans | Explain_it |
+| DefaultEnvironment | string | Selects the **default environment** when a player first joins the game.<br><img width="521" height="236" alt="image" src="https://github.com/user-attachments/assets/1e080ef3-bec7-4ace-989b-59f214c3d2ea" /><br>e.g. The default environment is set to ```DefaultEnvironment = "（o´・ェ・｀o）"``` and every new player will initially have this environment unless they change it. |
+| CanPlayerChangeEnvironment | boolean | Determines if the Player can change the environment under settings.<br><img width="565" height="87" alt="image" src="https://github.com/user-attachments/assets/678084ae-89a3-4cfd-9728-13db33258e9d" /><br>e.g. The settings shows up when `CanPlayerChangeEnvironment = true` |
 
 # Section 5 - Text Chat <3
 
