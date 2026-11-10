@@ -320,9 +320,13 @@ So below shows all of the possible settings for the Environment section of **Ros
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-| MarkedAsNight | Map of booleans | Explain_it |
+| MarkedAsNight | Map of booleans | Lists out a map of named `Environments` like **"mroewnya (≧∇≦)"** or **"（o´・ェ・｀o）"** and sets a bool value, with night being marked as `true` and day marked as `false`, A specific environment does not have to have a element inside this list if you want it to be counted as **Day**<br><img width="537" height="341" alt="image" src="https://github.com/user-attachments/assets/ec475db0-3c26-46ab-bc50-bf1a408a0a69" /><br>e.g. this lamp im standing near at, is glowing because inside the `MarkedAsNight` list I have `["（o´・ェ・｀o）"] = true,` which marks it as night and allows for objects like that lamp to illuminate. Below is a video on how you would create these illuminating objects whenever you want a lamp that only glows at **Night**.<br><video src="https://github.com/user-attachments/assets/716541af-11ff-4b2d-b8d0-348be53f8053" controls></video>Note that Quality may be garbage due to filesize compression. Also **YOU DO CAN USE ANY LIGHT SOURCE TYPE INCLUDING** `PointLight`, `SpotLight` or `SurfaceLight` Aslong its named exactly **"PointLight"** then itll work. |
 | DefaultEnvironment | string | Selects the **default environment** when a player first joins the game.<br><img width="521" height="236" alt="image" src="https://github.com/user-attachments/assets/1e080ef3-bec7-4ace-989b-59f214c3d2ea" /><br>e.g. The default environment is set to ```DefaultEnvironment = "（o´・ェ・｀o）"``` and every new player will initially have this environment unless they change it. |
 | CanPlayerChangeEnvironment | boolean | Determines if the Player can change the environment under settings.<br><img width="565" height="87" alt="image" src="https://github.com/user-attachments/assets/678084ae-89a3-4cfd-9728-13db33258e9d" /><br>e.g. The settings shows up when `CanPlayerChangeEnvironment = true` |
+
+
+## Configuration Part 3 (Misconceptions)
+
 
 # Section 5 - Text Chat <3
 
