@@ -341,7 +341,7 @@ So one thing that breaks scripts and the framework, is when you dont need a ligh
 And for this object called `Atmosphere` we approach it differently as shown below<br>
 <img width="488" height="310" alt="image" src="https://github.com/user-attachments/assets/4a0c71fa-d5c8-492f-93fc-f2c9b95fc48a" />
 
-> This effect does not have a `Enabled` property so instead I setted all of those circled values to `0`
+> This effect does not have a `Enabled` property so instead I setted all of those arrowed values to `0`
 
 
 Also One Environment value is required because if the `Environments` is empty, the script will beeak.
