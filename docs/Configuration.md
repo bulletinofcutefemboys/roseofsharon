@@ -333,7 +333,7 @@ Here is a breakdown of all properties in a sorted table.
 
 
 ### Configuration Part 3 (Misconceptions)
-So one thing that breaks scripts and the framework, is ahen you dont need a lighting effect or don't want blur especially `UIOpeningBlur` a common mistake people do is delete the object straight up. **This is incorrect practice** instead of deleting the unwanted effect, go to the properties, and check off the `Enabled` property directly or if you cannot find the `Enabled` property, set the values of that effect to `0` to effectively disable it.<br>
+So one thing that breaks scripts and the framework, is when you dont need a lighting effect or don't want blur especially `UIOpeningBlur` a common mistake people do is delete the object straight up. **This is incorrect practice** instead of deleting the unwanted effect, go to the properties, and check off the `Enabled` property directly or if you cannot find the `Enabled` property, set the values of that effect to `0` to effectively disable it.<br>
 <img width="361" height="44" alt="image" src="https://github.com/user-attachments/assets/2f8b53f9-db93-4b2d-9fa8-655c2a453a00" />
 
 > For Exmaple I have unchecked the `Enabled` property which disabled the eggect without breaking any scripts
