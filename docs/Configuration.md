@@ -354,8 +354,22 @@ And also all of those Lighting Objects inside the Lighting folder **MUST BE EXAC
 > Before we begin, your ReplicatedStorage folder should atleast contain ```RoseOfSharonConfig```.  
 > <img width="189" height="140" alt="image" src="https://github.com/user-attachments/assets/e88355e9-d1c3-44c8-935c-35681e36d3d1" /><br>
 > And inside that ModuleScript it should look like this.<br>
-> <img width="372" height="252" alt="image" src="https://github.com/user-attachments/assets/66593d54-54a9-4e1d-8656-8398d68052bc" /><br>
+> <img width="681" height="628" alt="image" src="https://github.com/user-attachments/assets/c07b3ead-53ea-47fb-8354-d2e19df37e64" /><br>
 > If not, please review [The Installation Guide](Installation.md) and follow instruction so things dont break.
+
+
+### Configuration Part 1 (General Properties)  
+<img width="344" height="127" alt="image" src="https://github.com/user-attachments/assets/1e7d55c9-000e-41c4-bb90-b50759cc2b0a" /><br>
+The image above represents some Settings Menu configs for Rose of Sharon (RS)  
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+| ChatFont | Enum.Font | Explanation |
+| ChatFontStyle | Enum.FontStyle | Explanation |
+| ChatFontWeight | Enum.FontWeight | Explanation |
+| AllowRobloxDefaultColors | boolean | Explanation |
+| ChatTagOverrideDefaultColor | boolean | Explanation |
+| BubbleChatEnabled | boolean | Explanation |
 
 
 # Section 6 - Chat Tags <3
