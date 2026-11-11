@@ -308,8 +308,9 @@ So because we are now manipulating the Lighting Environment in our studio as sho
 | `SunRays` + Other properties added | <img width="1100" height="1044" alt="image" src="https://github.com/user-attachments/assets/600593f0-9710-460c-a98f-5a16db8a8853" /> | Configured the `Intensity` property to `0.073` and then the `Spread` to `0.65` which gives it a more realistic sun ray like effect u see irl :3 <br><img width="361" height="62" alt="image" src="https://github.com/user-attachments/assets/6c83f416-2e85-41fe-81ad-430658e9e5b1" /> |
 | `ColorCorrection` + Other properties added | <img width="712" height="700" alt="image" src="https://github.com/user-attachments/assets/ded12df3-b6ba-4acc-a794-e8273ba7d631" /> | Adjusted the `Saturation` by `0.2` and `Contrast` by `0.2` while creating a **very very very pale magenta** `Tint` to make daa scene pink<br><img width="375" height="106" alt="image" src="https://github.com/user-attachments/assets/e219c59b-5516-4f4a-b18e-d2835581019e" /> |
 | Supplementary Blurring Effects added: `Bloom`, `UIOpeningBlur` and `DepthOfField` + other properties | <img width="715" height="699" alt="image" src="https://github.com/user-attachments/assets/347d6474-3b56-472a-8bac-61042ab584fc" /> | `Bloom` is an interesting effect because its not really a blurring effect but it has to do with the sun hitting on the parts and reflecting back, for more detail check [daa roblox documentation 4 BloomEffects](https://create.roblox.com/docs/reference/engine/classes/BloomEffect). Also here are the values I changed.<br><img width="335" height="86" alt="image" src="https://github.com/user-attachments/assets/ddeadd26-5bbf-4245-8b3b-4a56f447593e" /><br>The `DepthOfField` effect is also interesting because it is a blurring effect but it depends on your FOV, eyesight and near/far sidedness. For more info [check the roblox documentation](https://create.roblox.com/docs/reference/engine/classes/DepthOfFieldEffect). And these are the values I used for my `DepthOfField` effect<br><img width="347" height="107" alt="image" src="https://github.com/user-attachments/assets/24611f52-1c6e-4d90-8aa7-b9bf20b84ea8" /><br>And then we have the `UIOpeningBlur` which is interesting in itself because the plugin does not **RECOGNIZE** this and **YOU MUST MANUALLY SET THE SIZE AND IT MUST BE PRESENT IN THE LIGHTING OR IT WILL BREAK**<br><img width="335" height="40" alt="image" src="https://github.com/user-attachments/assets/6acd60a8-eafb-47a8-ab8e-83ffd120c847" /> |
+
+So once we have finally configured a beautiful environment ready to export into the config module, we will finally go to the **Environment To Table Parser and click that Parse Environment To Table** button. Once we click that button we should receive a long string below with your custom environment name mine is `mroewnya (≧∇≦)` and the underlying data below. Your string should look similiar to this below.
 <br>
-So once we have finally configured a beautiful environment ready to export into the config module, we will finally go to the **Environment To Table Parser** and click that **Parse Environment To Table** button. Once we click that button we should receive a long string below with your custom environment name mine is `mroewnya (≧∇≦)` and the underlying data below. Your string should look similiar to this below.<br>
 <img width="727" height="450" alt="image" src="https://github.com/user-attachments/assets/0a02d2e3-27c0-4c9f-b34b-896c38907f32" /><br>
 
 > Note that this string looks very small and looks liek a weird beehive shape thingy.
@@ -332,6 +333,20 @@ Here is a breakdown of all properties in a sorted table.
 
 
 ### Configuration Part 3 (Misconceptions)
+So one thing that breaks scripts and the framework, is ahen you dont need a lighting effect or don't want blur especially `UIOpeningBlur` a common mistake people do is delete the object straight up. **This is incorrect practice** instead of deleting the unwanted effect, go to the properties, and check off the `Enabled` property directly or if you cannot find the `Enabled` property, set the values of that effect to `0` to effectively disable it.<br>
+<img width="361" height="44" alt="image" src="https://github.com/user-attachments/assets/2f8b53f9-db93-4b2d-9fa8-655c2a453a00" />
+
+> For Exmaple I have unchecked the `Enabled` property which disabled the eggect without breaking any scripts
+
+And for this object called `Atmosphere` we approach it differently as shown below<br>
+<img width="488" height="310" alt="image" src="https://github.com/user-attachments/assets/4a0c71fa-d5c8-492f-93fc-f2c9b95fc48a" />
+
+> This effect does not have a `Enabled` property so instead I setted all of those circled values to `0`
+
+
+Also One Environment value is required because if the `Environments` is empty, the script will beeak.
+
+And also all of those Lighting Objects inside the Lighting folder **MUST BE EXACTLY AS NAMED BELLW** because if not, the script will break.
 
 
 # Section 5 - Text Chat <3
