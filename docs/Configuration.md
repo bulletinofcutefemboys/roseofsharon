@@ -346,8 +346,8 @@ And for this object called `Atmosphere` we approach it differently as shown belo
 
 Also One Environment value is required because if the `Environments` is empty, the script will beeak.
 
-And also all of those Lighting Objects inside the Lighting folder **MUST BE EXACTLY AS NAMED BELLW** because if not, the script will break.
-
+And also all of those Lighting Objects inside the Lighting folder **MUST BE EXACTLY AS NAMED BELOW SHOWN IN THE IMAGE** because if not, the script will break.<br>
+<img width="170" height="163" alt="image" src="https://github.com/user-attachments/assets/48c69505-9757-4cee-830f-41c7bb387e74" />
 
 # Section 5 - Text Chat <3
 
