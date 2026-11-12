@@ -360,7 +360,7 @@ And also all of those Lighting Objects inside the Lighting folder **MUST BE EXAC
 
 ### Configuration Part 1 (General Properties)  
 <img width="344" height="127" alt="image" src="https://github.com/user-attachments/assets/1e7d55c9-000e-41c4-bb90-b50759cc2b0a" /><br>
-The image above represents some Settings Menu configs for Rose of Sharon (RS)  
+The image above represents some Text Chat configs for Rose of Sharon (RS)  
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
@@ -373,7 +373,22 @@ Here is a breakdown of all properties in a sorted table.
 
 
 ### Configuration Part 2 (Bubble Chat Properties)  
-Moew
+<img width="622" height="274" alt="image" src="https://github.com/user-attachments/assets/68409a52-67d5-49ef-b0ac-08592dea143e" /><br>
+The image above represents some Text Chat configs for Rose of Sharon (RS)  
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+| BubbleBackgroundColor | Color3 | Sets the bubble chat background color.<br><img width="227" height="52" alt="image" src="https://github.com/user-attachments/assets/41250459-a873-4f05-ae6d-97821404e121" /><br>e.g. This bubble chat is set to `BubbleBackgroundColor = Color3.new(0.458824, 0, 0.980392)` |
+| BubbleBackgroundTransparency | number | Sets the bubble chat background transparency.<br><img width="223" height="52" alt="image" src="https://github.com/user-attachments/assets/4b003903-93e4-4845-bde6-83646ccc31f0" /><br>e.g. This bubble chat is set to `BubbleBackgroundTransparency = 0.9` |
+| TailVisible | boolean | Determines if the bubble chat should have a triangular tail pointing to your avatar.<br><img width="242" height="74" alt="image" src="https://github.com/user-attachments/assets/711defef-2afc-4968-ac4c-7a0d970d4501" /><br>e.g. This bubble chat is set to `TailVisible = false` and does not have a tail |
+| BubbleTextColor | Color3 | Sets the bubble chat text color.<br><img width="210" height="75" alt="image" src="https://github.com/user-attachments/assets/a004585c-4d87-4dfc-bcf1-0f3d6ccab0e6" /><br>e.g. This bubble chat text is set to `BubbleTextColor = Color3.new(0, 0.815686, 1)` |
+| BubbleTextSize | integer | Sets the bubble chat text font size.<br><img width="260" height="82" alt="image" src="https://github.com/user-attachments/assets/47b01f09-9c0b-409f-a742-d36df2bda529" /><br>e.g. This bubble chat text is set to `BubbleTextSize = 48` |
+| Duration | number | Sets how long each bubble chat lasts in seconds.<br><video src="https://github.com/user-attachments/assets/c129395e-adaf-4788-8b5f-1f3be0db8a03" controls></video>e.g. This bubble chat only lasts for `Duration = 3` seconds |
+| VerticalTextSpacing | integer | Determines how spaced out **(in pixels)** the bubble chats should be.<br><img width="408" height="163" alt="image" src="https://github.com/user-attachments/assets/521d2013-f880-412f-ae43-7e4c4e351bec" /><br>e.g. These bubble chats are about `VerticalTextSpacing = 60` pixels apart |
+| PivotOffset | [Vector3](Vector23.md) | Sets the offset (in studs) of the bubble chat stack by a [Vector3](Vector23.md) value.<br><img width="285" height="279" alt="image" src="https://github.com/user-attachments/assets/f8adb099-a3b3-4e71-88df-79566ab11da0" /><br>e.g. This bubble chat has an offset of `PivotOffset = Vector3.new(2,3,4)` |
+| MaxBubbleStack | integer | Sets the max amount of bubble chats to stack up before overflowing.<br><img width="249" height="149" alt="image" src="https://github.com/user-attachments/assets/1d0ed968-35d7-4f71-8313-9291c794bff3" /><br>e.g. These bubble chats are set to `MaxBubbleStack = 3` |
+| MaxVisibleDistance | number | Determines the max distance threshold (in studs) for a bubble chat stack to be seen as visible **(This does not translate to readable as this threshold only renders the text as "...")**<br><img width="72" height="78" alt="image" src="https://github.com/user-attachments/assets/fdef0e5e-7202-441b-9bd3-13a1e0920a82" /><br>e.g. This bubble chat is set to `MaxVisibleDistance = 100` and because this image above is around ~90 studs away from the bubble chat while more than `MaxReadableDistance = 40`, it shows as **...** |
+| MaxReadableDistance | number | Determines the max distance threshold for a bubble chat stack to be seen and readable.<br><img width="196" height="211" alt="image" src="https://github.com/user-attachments/assets/02e19683-b4ef-4d24-894a-1dd8ab2c4b28" /><br>e.g. This bubble chat is set to `MaxReadableDistance = 40` and because this image above is around ~39 studs away from the bubble chat, it fully displays the text instead of **...** |
 
 
 # Section 6 - Chat Tags <3
