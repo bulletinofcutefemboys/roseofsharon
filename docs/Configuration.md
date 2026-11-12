@@ -53,7 +53,7 @@ Here is a breakdown of all properties in a sorted table.
 | IconAssetID | TextureID | Inserts a **TextureID to the main icon** during the loading screen animation<br><img width="150" height="150" alt="An example of the icon display on the loading screen" src="https://github.com/user-attachments/assets/f292d962-5128-49ae-ba20-0e5ecd258180" /><br>e.g. this has ```IconAssetID = "rbxassetid://73439321896937"``` |
 | CreditsShown | boolean | Whether to display **Credits** on the developer console (F9)<br><img width="1121" height="135" alt="The Developer Console Credits Input" src="https://github.com/user-attachments/assets/a817353b-4ca0-4b6f-93e7-b2c759663520" /><br>e.g. this has ```CreditsShown = true``` |
 | ParticlesOnIcon | boolean | Whether to display **Expanding Particle VFX** in the loading screen animation<br><img width="1393" height="793" alt="image" src="https://github.com/user-attachments/assets/ecb99d3f-1758-4224-80b1-b75c5f4b01ec" /><br>e.g. this has ```ParticlesOnIcon = true``` |
-| ParticleColor | Color3 | Determines whether what **RGB Value** the expanding particles should be default is<br>```Color.fromRGB(255,255,255)``` |
+| ParticleColor | Color3 | Determines whether what **RGB Value** the expanding particles should be default is<br>```Color3.fromRGB(255,255,255)``` |
 | NumberOfParticles | integer | Determines **how much particles** should be rendered in the **Expanding Particle VFX.**<br><img width="1440" height="788" alt="image" src="https://github.com/user-attachments/assets/2cc50c12-b838-4433-9136-02821b6e90cc" /><br>e.g this has ```NumberOfParticles = 1``` |
 
 
@@ -70,8 +70,8 @@ Here is a breakdown of all properties in a sorted table.
 | UITextFontFace | Enum.Font | Sets the rendered font of all status texts from a **predefined list of Enum.Font fonts**<br><img width="203" height="43" alt="image" src="https://github.com/user-attachments/assets/0f534430-c7b9-46b9-bf3d-46067cb34e88" /><br>e.g. this status text uses ```UITextFontFace = Enum.Font.IndieFlower``` |
 | UITextFontStyle | Enum.FontStyle | Sets the font style of all status texts, which can be either **Normal or Italicized** <br><img width="416" height="108" alt="image" src="https://github.com/user-attachments/assets/f7c365f9-f1a8-40d0-b757-22c8f5fc9e8e" /><br>e.g. this button uses ```UITextFontStyle = Enum.FontStyle.Italic``` |
 | UITextFontWeight | Enum.FontWeight | Sets the font weight of all status texts, which can range from **Super Skinny Light to Heavy Black**.<br><img width="255" height="38" alt="image" src="https://github.com/user-attachments/assets/696927b0-0e6f-411a-a3c6-39202a9c8c73" /><br>e.g. This status text uses ```UITextFontWeight = Enum.FontWeight.Bold``` |
-| BackgroundBlack | Color3 | Determines the **Color3 value** of the **black contrasted side of the loading screen.**<br>Default is```Color.fromRGB(0,0,0)``` |
-| BackgroundWhite | Color3 | Determines the **Color3 value** of the **white contrasted side of the loading screen.**<br>Default is```Color.fromRGB(255,255,255)``` |
+| BackgroundBlack | Color3 | Determines the **Color3 value** of the **black contrasted side of the loading screen.**<br>Default is```Color3.fromRGB(0,0,0)``` |
+| BackgroundWhite | Color3 | Determines the **Color3 value** of the **white contrasted side of the loading screen.**<br>Default is```Color3.fromRGB(255,255,255)``` |
 
 
 ### Configuration Part 3 (Misconceptions & Traps)
@@ -235,7 +235,7 @@ The image above represents some Settings Menu configs for Rose of Sharon (RS)
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-| SettingsTitleAndDesc | List of `{Title,Desc}` | This is a list containing all possible settings, you cannot remove or add any new elements. But you can **change the `Title` or `Desc` to any string** to your likings.<br><img width="545" height="72" alt="image" src="https://github.com/user-attachments/assets/5d8a702c-fa77-45c2-a74c-2e912bee59a7" /><br>e.g. This Music toggle had a modified `Music = {Title = "The Illuminati", Desc = "triangles"},` |
+| SettingsTitleAndDesc | Map of `{Title,Desc}` | This is a list containing all possible settings, you cannot remove or add any new elements. But you can **change the `Title` or `Desc` to any string** to your likings.<br><img width="545" height="72" alt="image" src="https://github.com/user-attachments/assets/5d8a702c-fa77-45c2-a74c-2e912bee59a7" /><br>e.g. This Music toggle had a modified `Music = {Title = "The Illuminati", Desc = "triangles"},` |
 | AllowAFKToggle | boolean | Determines whether to display the AFK Toggle under settings **(DOES NOT AFFECT AFK STATUS)**<br><img width="553" height="67" alt="image" src="https://github.com/user-attachments/assets/e3e820f5-5b8c-4641-b0c9-36c26f121929" /><br>e.g. this AFK Toggle appears when ```AllowAFKToggle = true``` |
 | AllowSprintingToggle | boolean | Determines whether to display the Sprint Toggle under settings. **(Note this will not affect sprinting itself only the toggle button)**<br><img width="547" height="72" alt="image" src="https://github.com/user-attachments/assets/451d5b8f-716e-40eb-bdd3-e9fccf04f4cb" /><br>e.g. this Sprint Toggle appears when ```AllowSprintingToggle = true``` |
 
@@ -365,7 +365,7 @@ Here is a breakdown of all properties in a sorted table.
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
 | ChatFont | Enum.Font | Determines the master font **for the chat window and bubble chat**<br><img width="468" height="268" alt="image" src="https://github.com/user-attachments/assets/fde94eed-bee6-4112-8674-ffc38367dcc5" /><br>e.g. This chat window is using `ChatFont = Enum.Font.IndieFlower` |
-| ChatFontStyle | Enum.FontStyle | Determines the master font style (Either Normal or Italicized) **for the chat window and bubble chat**<br><img width="165" height="286" alt="image" src="https://github.com/user-attachments/assets/6930df10-9d4a-4eb1-85fc-f2300411a99a" /><br>e.g. This bubble chat uses `ChatFontStyle = Enum.FontStyle.Italicized` |
+| ChatFontStyle | Enum.FontStyle | Determines the master font style (Either Normal or Italicized) **for the chat window and bubble chat**<br><img width="165" height="286" alt="image" src="https://github.com/user-attachments/assets/6930df10-9d4a-4eb1-85fc-f2300411a99a" /><br>e.g. This bubble chat uses `ChatFontStyle = Enum.FontStyle.Italic` |
 | ChatFontWeight | Enum.FontWeight | Determines the master font weight **for the chat window and bubble chat**<br><img width="467" height="49" alt="image" src="https://github.com/user-attachments/assets/44ac1846-f3d6-4979-9262-4f2810189459" /><br>e.g. This chat bar is using `ChatFontWeight = Enum.FontWeight.Bold` |
 | AllowRobloxDefaultColors | boolean | Sets whether if you want the default Roblox chat title colors<br><img width="152" height="62" alt="image" src="https://github.com/user-attachments/assets/f3c10b51-40df-42f9-9278-6b3ae36db22b" /><br>e.g. These people chatting currently have `AllowRobloxDefaultColors = true` |
 | ChatTagOverrideDefaultColor | boolean | Sets whether if chattags should override the default chatting color set by `ChatTextColor`<br><img width="309" height="119" alt="image" src="https://github.com/user-attachments/assets/c8aed99a-5c21-4b38-a471-618a037130c1" /><br>e.g. This chat window has `ChatTagOverrideDefaultColor = false` |
