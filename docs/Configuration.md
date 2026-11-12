@@ -336,12 +336,12 @@ Here is a breakdown of all properties in a sorted table.
 So one thing that breaks scripts and the framework, is when you dont need a lighting effect or don't want blur especially `UIOpeningBlur` a common mistake people do is delete the object straight up. **This is incorrect practice** instead of deleting the unwanted effect, go to the properties, and check off the `Enabled` property directly or if you cannot find the `Enabled` property, set the values of that effect to `0` to effectively disable it.<br>
 <img width="361" height="44" alt="image" src="https://github.com/user-attachments/assets/2f8b53f9-db93-4b2d-9fa8-655c2a453a00" />
 
-> For Exmaple I have unchecked the `Enabled` property which disabled the effect without breaking any scripts
+> For Example I have unchecked the `Enabled` property which disabled the effect without breaking any scripts
 
 And for this object called `Atmosphere` we approach it differently as shown below<br>
 <img width="488" height="310" alt="image" src="https://github.com/user-attachments/assets/4a0c71fa-d5c8-492f-93fc-f2c9b95fc48a" />
 
-> This effect does not have a `Enabled` property so instead I setted all of those arrowed values to `0`
+> This effect does not have a `Enabled` property so instead I set all of those arrowed values to `0`
 
 
 Also One Environment value is required because if the `Environments` is empty, the script will break.
