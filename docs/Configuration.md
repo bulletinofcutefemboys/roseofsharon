@@ -374,7 +374,7 @@ Here is a breakdown of all properties in a sorted table.
 
 ### Configuration Part 2 (Bubble Chat Properties)  
 <img width="622" height="274" alt="image" src="https://github.com/user-attachments/assets/68409a52-67d5-49ef-b0ac-08592dea143e" /><br>
-The image above represents some Text Chat configs for Rose of Sharon (RS)  
+The image above represents all Bubble Chat configs for Rose of Sharon (RS)  
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
@@ -389,6 +389,21 @@ Here is a breakdown of all properties in a sorted table.
 | MaxBubbleStack | integer | Sets the max amount of bubble chats to stack up before overflowing.<br><img width="249" height="149" alt="image" src="https://github.com/user-attachments/assets/1d0ed968-35d7-4f71-8313-9291c794bff3" /><br>e.g. These bubble chats are set to `MaxBubbleStack = 3` |
 | MaxVisibleDistance | number | Determines the max distance threshold (in studs) for a bubble chat stack to be seen as visible **(This does not translate to readable as this threshold only renders the text as "...")**<br><img width="72" height="78" alt="image" src="https://github.com/user-attachments/assets/fdef0e5e-7202-441b-9bd3-13a1e0920a82" /><br>e.g. This bubble chat is set to `MaxVisibleDistance = 100` and because this image above is around ~90 studs away from the bubble chat while more than `MaxReadableDistance = 40`, it shows as **...** |
 | MaxReadableDistance | number | Determines the max distance threshold for a bubble chat stack to be seen and readable.<br><img width="196" height="211" alt="image" src="https://github.com/user-attachments/assets/02e19683-b4ef-4d24-894a-1dd8ab2c4b28" /><br>e.g. This bubble chat is set to `MaxReadableDistance = 40` and because this image above is around ~39 studs away from the bubble chat, it fully displays the text instead of **...** |
+
+
+### Configuration Part 3 (UI Chat Properties)  
+<img width="636" height="190" alt="image" src="https://github.com/user-attachments/assets/bd25157e-7132-4a80-9251-e4cf62903580" /><br>
+The image above represents all UI Chat configs for Rose of Sharon (RS)  
+Here is a breakdown of all properties in a sorted table.  
+| Config Property | Value Type | Explanation |
+| :---: | :---: | :---: |
+| ChatWindowBackgroundColor | Color3 | RRR |
+| ChatWindowBackgroundTransparency | number | RRR |
+| ChatBarBackgroundColor | Color3 | RRR |
+| ChatBarBackgroundTransparency | number | RRR |
+| ChatTextColor | Color3 | RRR |
+| ChatTextStrokeColor | Color3 | RRR |
+| ChatTextStrokeTransparency | number | RRR |
 
 
 # Section 6 - Chat Tags <3
