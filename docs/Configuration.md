@@ -364,12 +364,16 @@ The image above represents some Settings Menu configs for Rose of Sharon (RS)
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-| ChatFont | Enum.Font | Explanation |
-| ChatFontStyle | Enum.FontStyle | Explanation |
-| ChatFontWeight | Enum.FontWeight | Explanation |
-| AllowRobloxDefaultColors | boolean | Explanation |
-| ChatTagOverrideDefaultColor | boolean | Explanation |
-| BubbleChatEnabled | boolean | Explanation |
+| ChatFont | Enum.Font | Determines the master font **for the chat window and bubble chat**<br><img width="468" height="268" alt="image" src="https://github.com/user-attachments/assets/fde94eed-bee6-4112-8674-ffc38367dcc5" /><br>e.g. This chat window is using `ChatFont = Enum.Font.IndieFlower` |
+| ChatFontStyle | Enum.FontStyle | Determines the master font style (Either Normal or Italicized) **for the chat window and bubble chat**<br><img width="165" height="286" alt="image" src="https://github.com/user-attachments/assets/6930df10-9d4a-4eb1-85fc-f2300411a99a" /><br>e.g. This bubble chat uses `ChatFontStyle = Enum.FontStyle.Italicized` |
+| ChatFontWeight | Enum.FontWeight | Determines the master font weight **for the chat window and bubble chat**<br><img width="467" height="49" alt="image" src="https://github.com/user-attachments/assets/44ac1846-f3d6-4979-9262-4f2810189459" /><br>e.g. This chat bar is using `ChatFontWeight = Enum.FontWeight.Bold` |
+| AllowRobloxDefaultColors | boolean | Sets whether if you want the default Roblox chat title colors<br><img width="152" height="62" alt="image" src="https://github.com/user-attachments/assets/f3c10b51-40df-42f9-9278-6b3ae36db22b" /><br>e.g. These people chatting currently have `AllowRobloxDefaultColors = true` |
+| ChatTagOverrideDefaultColor | boolean | Sets whether if chattags should override the default chatting color set by `ChatTextColor`<br><img width="309" height="119" alt="image" src="https://github.com/user-attachments/assets/c8aed99a-5c21-4b38-a471-618a037130c1" /><br>e.g. This chat window has `ChatTagOverrideDefaultColor = false` |
+| BubbleChatEnabled | boolean | Determines if Bubbles appear ontop of your avatar when you chatted something.<br><img width="207" height="344" alt="image" src="https://github.com/user-attachments/assets/682e7266-e968-44a4-a5bd-d6f62f998f9b" /><br>e.g. This bubble appeared when `BubbleChatEnabled = true`  |
+
+
+### Configuration Part 2 (Bubble Chat Properties)  
+Moew
 
 
 # Section 6 - Chat Tags <3
