@@ -407,6 +407,13 @@ Here is a breakdown of all properties in a sorted table.
 
 
 ### Configuration Part 4 (Other Notes)  
+`MaxVisibleDistance` should not be less than `MaxReadableDistance` doing so will break the script.
+
+Aswell as making sure all properties marked with `integer` should contain a whole number so scripts dont get buggy. ^o^
+
+Make sure all properties that have a `Transparency` in there name are between [0,1] with `0` meaning Fully Opaque and `1` meaning Fully transparent.
+
+ONE Thing about Color3, A new Color3 Value created from Color3.new must have rgb values from [0,1]. While Color3.fromRGB must be from [0,255]!
 
 
 # Section 6 - Chat Tags <3
