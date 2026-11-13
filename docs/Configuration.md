@@ -401,9 +401,12 @@ Here is a breakdown of all properties in a sorted table.
 | ChatWindowBackgroundTransparency | number | Sets the transparency of the Chat window background.<br><img width="540" height="298" alt="image" src="https://github.com/user-attachments/assets/2b88fda1-c4a9-415d-8ee1-19f06253bda0" /><br>e.g. This chat window background is `ChatWindowBackgroundTransparency = 0.8` |
 | ChatBarBackgroundColor | Color3 | Sets the color of the Chat window bar.<br><img width="472" height="50" alt="image" src="https://github.com/user-attachments/assets/cc8661ca-ddf3-4735-b667-4644bceea1b4" /><br>e.g. This chat bar color is set to `ChatBarBackgroundColor = Color3.new(0, 0.745098, 0.109804)` |
 | ChatBarBackgroundTransparency | number | Sets the transparency of the Chat window bar.<br><img width="469" height="47" alt="image" src="https://github.com/user-attachments/assets/80fb9f57-bbbe-49cf-9386-fc568e197e32" /><br>e.g. This chat bar is using `ChatBarBackgroundTransparency = 0.7` |
-| ChatTextColor | Color3 | RRR |
-| ChatTextStrokeColor | Color3 | RRR |
-| ChatTextStrokeTransparency | number | RRR |
+| ChatTextColor | Color3 | Determines the color of the master chat text.<br><img width="109" height="38" alt="image" src="https://github.com/user-attachments/assets/60364322-b9ec-483b-9761-b03d521124da" /><br>e.g. This default chat text is `ChatTextColor = Color3.new(0, 1, 0)` |
+| ChatTextStrokeColor | Color3 | Determines the color of the master chat text stroke.<br><img width="147" height="31" alt="image" src="https://github.com/user-attachments/assets/bdb864ae-0f11-4611-8249-6cf64e8f18ea" /><br>e.g. This chat text stroke is `ChatTextStrokeColor = Color3.new(0.639216, 0.607843, 1)` |
+| ChatTextStrokeTransparency | number | Determines the transparency of the master chat text stroke.<br><img width="126" height="33" alt="image" src="https://github.com/user-attachments/assets/2cc45024-7c54-4968-ab96-c7708ddcaf2c" /><br>e.g. This chat text stroke is `ChatTextStrokeTransparency = 0.7` |
+
+
+### Configuration Part 4 (Other Notes)  
 
 
 # Section 6 - Chat Tags <3
