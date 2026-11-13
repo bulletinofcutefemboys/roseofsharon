@@ -397,10 +397,10 @@ The image above represents all UI Chat configs for Rose of Sharon (RS)
 Here is a breakdown of all properties in a sorted table.  
 | Config Property | Value Type | Explanation |
 | :---: | :---: | :---: |
-| ChatWindowBackgroundColor | Color3 | RRR |
-| ChatWindowBackgroundTransparency | number | RRR |
-| ChatBarBackgroundColor | Color3 | RRR |
-| ChatBarBackgroundTransparency | number | RRR |
+| ChatWindowBackgroundColor | Color3 | Sets the color of the Chat window background.<br><img width="564" height="365" alt="image" src="https://github.com/user-attachments/assets/43845dab-9280-4ca3-8ba7-d40214adb381" /><br>e.g. This chat window background is `ChatWindowBackgroundColor = Color3.new(0, 0.898039, 1)` |
+| ChatWindowBackgroundTransparency | number | Sets the transparency of the Chat window background.<br><img width="540" height="298" alt="image" src="https://github.com/user-attachments/assets/2b88fda1-c4a9-415d-8ee1-19f06253bda0" /><br>e.g. This chat window background is `ChatWindowBackgroundTransparency = 0.8` |
+| ChatBarBackgroundColor | Color3 | Sets the color of the Chat window bar.<br><img width="472" height="50" alt="image" src="https://github.com/user-attachments/assets/cc8661ca-ddf3-4735-b667-4644bceea1b4" /><br>e.g. This chat bar color is set to `ChatBarBackgroundColor = Color3.new(0, 0.745098, 0.109804)` |
+| ChatBarBackgroundTransparency | number | Sets the transparency of the Chat window bar.<br><img width="469" height="47" alt="image" src="https://github.com/user-attachments/assets/80fb9f57-bbbe-49cf-9386-fc568e197e32" /><br>e.g. This chat bar is using `ChatBarBackgroundTransparency = 0.7` |
 | ChatTextColor | Color3 | RRR |
 | ChatTextStrokeColor | Color3 | RRR |
 | ChatTextStrokeTransparency | number | RRR |
